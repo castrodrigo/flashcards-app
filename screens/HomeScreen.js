@@ -1,23 +1,21 @@
 import React from "react";
 import { ScrollView, Text } from "react-native";
 import styled from "styled-components/native";
+import Header from "../components/Header";
 
 const Container = styled.View`
   flex: 1;
-  padding-top: 30px;
 `;
 
 export default class HomeScreen extends React.Component {
   static navigationOptions = {
-    header: null
+    header: <Header>My Decks</Header>
   };
 
   render() {
     return (
       <Container>
-        <ScrollView>
-          <Text>Home</Text>
-        </ScrollView>
+        <ScrollView />
       </Container>
     );
   }
