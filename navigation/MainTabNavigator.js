@@ -7,41 +7,35 @@ import {
 
 import TabBarIcon from "../components/TabBarIcon";
 import HomeScreen from "../screens/HomeScreen";
-import LinksScreen from "../screens/LinksScreen";
+import NewDeckScreen from "../screens/NewDeckScreen";
 
 const HomeStack = createStackNavigator({
   Home: HomeScreen
 });
 
 HomeStack.navigationOptions = {
-  tabBarLabel: "Home",
+  tabBarLabel: "My Decks",
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
-      name={
-        Platform.OS === "ios"
-          ? `ios-information-circle${focused ? "" : "-outline"}`
-          : "md-information-circle"
-      }
+      name={"cards-outline"}
+      iconFamily="community"
     />
   )
 };
 
-const LinksStack = createStackNavigator({
-  Links: LinksScreen
+const NewDeckStack = createStackNavigator({
+  NewDeck: NewDeckScreen
 });
 
-LinksStack.navigationOptions = {
-  tabBarLabel: "Links",
+NewDeckStack.navigationOptions = {
+  tabBarLabel: "New Deck",
   tabBarIcon: ({ focused }) => (
-    <TabBarIcon
-      focused={focused}
-      name={Platform.OS === "ios" ? "ios-link" : "md-link"}
-    />
+    <TabBarIcon focused={focused} name={"plus-circle"} iconFamily="awesome" />
   )
 };
 
 export default createBottomTabNavigator({
   HomeStack,
-  LinksStack
+  NewDeckStack
 });
