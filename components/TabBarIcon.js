@@ -1,16 +1,34 @@
-import React from 'react';
-import { Icon } from 'expo';
+import React from "react";
+import {
+  FontAwesome,
+  MaterialCommunityIcons,
+  Ionicons
+} from "@expo/vector-icons";
 
-import Colors from '../constants/Colors';
+import Colors from "../constants/Colors";
 
 export default class TabBarIcon extends React.Component {
+  familySelector = family => {
+    switch (family) {
+      case "awesome":
+        return FontAwesome;
+      case "community":
+        return MaterialCommunityIcons;
+      default:
+        return Ionicons;
+    }
+  };
+
   render() {
+    const IconFamily = this.familySelector(this.props.iconFamily);
     return (
-      <Icon.Ionicons
+      <IconFamily
         name={this.props.name}
         size={26}
         style={{ marginBottom: -3 }}
-        color={this.props.focused ? Colors.tabIconSelected : Colors.tabIconDefault}
+        color={
+          this.props.focused ? Colors.tabIconSelected : Colors.tabIconDefault
+        }
       />
     );
   }
