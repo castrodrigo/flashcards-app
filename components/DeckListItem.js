@@ -12,6 +12,7 @@ const Item = styled.View`
 
 const TextWrapper = styled.View`
   padding-top: 4px;
+  flex-shrink: 1;
 `;
 
 const Title = styled.Text`
