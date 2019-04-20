@@ -14,6 +14,7 @@ const Card = styled.View`
   position: absolute;
   margin-top: 4px;
   margin-left: 4px;
+  border-radius: 6px;
   ${({ position }) =>
     position &&
     `
