@@ -69,21 +69,21 @@ const SaveButton = styled(Button)`
   border-bottom-color: #b881ec;
 `;
 
-export default class NewDeckScreen extends React.Component {
+export default class NewCardScreen extends React.Component {
   static navigationOptions = {
-    header: <Header>New Deck</Header>
+    header: <Header>New Card</Header>
   };
 
   state = {
-    name: "",
-    description: "",
+    question: "",
+    answer: "",
     error: false
   };
 
   handleSubmit = () => {
-    const { name, description } = this.state;
-    if (name !== "") {
-      // return this.props.onSubmit({ name, description });
+    const { question, answer } = this.state;
+    if (question !== "" && answer !== "") {
+      // return this.props.onSubmit({ question, answer });
       return;
     }
     return this.setState({ error: true });
@@ -94,32 +94,31 @@ export default class NewDeckScreen extends React.Component {
   render() {
     return (
       <Container>
-        <Title>Creating a new Deck</Title>
+        <Title>Creating a new Card</Title>
         <Description>
-          You can create a Deck to group a collection of topics that you would
-          like to revisit. It is possible to trigger a Quiz through all the
-          inserted questions.
+          You can create as many Cards you want in this Deck. Each Card behaves
+          as a single question in the Quiz.
         </Description>
         <Form>
           <Input
-            placeholder="Name"
-            maxLength={30}
-            onBlur={Keyboard.dismiss}
-            onChangeText={e => this.handleChange(e, "name")}
-          />
-          <Input
-            placeholder="Description"
+            placeholder="Question"
             maxLength={60}
             onBlur={Keyboard.dismiss}
-            onChangeText={e => this.handleChange(e, "description")}
+            onChangeText={e => this.handleChange(e, "question")}
+          />
+          <Input
+            placeholder="Answer"
+            maxLength={60}
+            onBlur={Keyboard.dismiss}
+            onChangeText={e => this.handleChange(e, "answer")}
           />
           {this.state.error && (
             <ErrorMessage>
-              Do not forget to define the name of the Deck
+              Do not forget to add a Question and an Answer for your new Card
             </ErrorMessage>
           )}
           <SaveButton onPress={this.handleSubmit}>
-            <ButtonLabel>Create New Deck</ButtonLabel>
+            <ButtonLabel>Create New Card</ButtonLabel>
           </SaveButton>
         </Form>
       </Container>
