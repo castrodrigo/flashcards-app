@@ -51,7 +51,7 @@ export default class DeckScreen extends React.Component {
           <FontAwesome name={"question-circle-o"} size={20} color="#FFF" />
           <ButtonLabel>Start Quiz</ButtonLabel>
         </StartQuiz>
-        <AddNewCard>
+        <AddNewCard onPress={() => this.props.navigation.navigate("NewCard")}>
           <MaterialIcons name={"library-add"} size={20} color="#FFF" />
           <ButtonLabel>Add a New Card</ButtonLabel>
         </AddNewCard>
