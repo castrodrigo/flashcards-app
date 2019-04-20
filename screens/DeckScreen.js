@@ -39,9 +39,9 @@ const AddNewCard = styled(Button)`
 `;
 
 export default class DeckScreen extends React.Component {
-  static navigationOptions = {
-    header: <Header>Deck</Header>
-  };
+  static navigationOptions = ({ navigation }) => ({
+    header: <Header navigation={navigation}>Deck</Header>
+  });
 
   render() {
     return (
