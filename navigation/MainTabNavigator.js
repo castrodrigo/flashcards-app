@@ -3,15 +3,16 @@ import {
   createStackNavigator,
   createBottomTabNavigator
 } from "react-navigation";
-
 import TabBarIcon from "../components/TabBarIcon";
 import HomeScreen from "../screens/HomeScreen";
-import NewDeckScreen from "../screens/NewDeckScreen";
 import DeckScreen from "../screens/DeckScreen";
+import NewCardScreen from "../screens/NewCardScreen";
+import NewDeckScreen from "../screens/NewDeckScreen";
 
 const HomeStack = createStackNavigator({
   Home: HomeScreen,
-  Deck: DeckScreen
+  Deck: DeckScreen,
+  NewCard: NewCardScreen
 });
 
 HomeStack.navigationOptions = {
