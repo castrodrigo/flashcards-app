@@ -70,9 +70,9 @@ const SaveButton = styled(Button)`
 `;
 
 export default class NewCardScreen extends React.Component {
-  static navigationOptions = {
-    header: <Header>New Card</Header>
-  };
+  static navigationOptions = ({ navigation }) => ({
+    header: <Header navigation={navigation}>New Card</Header>
+  });
 
   state = {
     question: "",
