@@ -1,5 +1,4 @@
 import React from "react";
-import { Platform } from "react-native";
 import {
   createStackNavigator,
   createBottomTabNavigator
@@ -8,9 +7,11 @@ import {
 import TabBarIcon from "../components/TabBarIcon";
 import HomeScreen from "../screens/HomeScreen";
 import NewDeckScreen from "../screens/NewDeckScreen";
+import DeckScreen from "../screens/DeckScreen";
 
 const HomeStack = createStackNavigator({
-  Home: HomeScreen
+  Home: HomeScreen,
+  Deck: DeckScreen
 });
 
 HomeStack.navigationOptions = {
