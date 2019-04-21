@@ -1,4 +1,4 @@
-import { GET_DECKS, GET_DECK, ADD_DECK } from "../actions/decks";
+import { GET_DECKS, ADD_DECK } from "../actions/decks";
 
 export default (state = {}, action) => {
   switch (action.type) {
@@ -12,7 +12,6 @@ export default (state = {}, action) => {
         ...state,
         ...action.decks
       };
-    case GET_DECK:
     default:
       return state;
   }
