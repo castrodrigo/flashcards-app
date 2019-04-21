@@ -34,12 +34,12 @@ const HighLight = styled.Text`
   font-weight: bold;
 `;
 
-const DeckDisplay = props => (
+const DeckDisplay = ({ name, description }) => (
   <Item>
     <Deck />
     <TextWrapper>
-      <Title>Deck 01</Title>
-      <Description>Lorem Lorem</Description>
+      <Title>{name}</Title>
+      <Description>{description}</Description>
       <TotalCards>
         Cards: <HighLight>12</HighLight>
       </TotalCards>
