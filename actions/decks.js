@@ -2,7 +2,6 @@ import * as api from "../api";
 const uuidv1 = require("uuid/v1");
 
 export const GET_DECKS = "GET_DECKS";
-export const GET_DECK = "GET_DECK";
 export const ADD_DECK = "ADD_DECK";
 
 export function getDecks(decks) {
@@ -14,11 +13,6 @@ export function getDecks(decks) {
 
 export const handleGetDecks = () => dispatch =>
   api.getDecks().then(decks => dispatch(getDecks(JSON.parse(decks))));
-
-export const getDeck = deck => ({
-  type: GET_DECK,
-  deck
-});
 
 const addDeck = deck => ({
   type: ADD_DECK,
