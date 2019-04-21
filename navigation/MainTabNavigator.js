@@ -8,11 +8,13 @@ import HomeScreen from "../screens/HomeScreen";
 import DeckScreen from "../screens/DeckScreen";
 import NewCardScreen from "../screens/NewCardScreen";
 import NewDeckScreen from "../screens/NewDeckScreen";
+import QuizScreen from "../screens/QuizScreen";
 
 const HomeStack = createStackNavigator({
   Home: HomeScreen,
   Deck: DeckScreen,
-  NewCard: NewCardScreen
+  NewCard: NewCardScreen,
+  Quiz: QuizScreen
 });
 
 HomeStack.navigationOptions = {
