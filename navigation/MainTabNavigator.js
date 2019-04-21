@@ -4,15 +4,15 @@ import {
   createBottomTabNavigator
 } from "react-navigation";
 import TabBarIcon from "../components/TabBarIcon";
-import HomeScreen from "../screens/HomeScreen";
+import HomeContainer from "../screens/HomeContainer";
 import DeckScreen from "../screens/DeckScreen";
 import NewCardScreen from "../screens/NewCardScreen";
-import NewDeckScreen from "../screens/NewDeckScreen";
+import NewDeckContainer from "../screens/NewDeckContainer";
 import QuizScreen from "../screens/QuizScreen";
 import QuizScoreScreen from "../screens/QuizScoreScreen";
 
 const HomeStack = createStackNavigator({
-  Home: HomeScreen,
+  Home: HomeContainer,
   Deck: DeckScreen,
   NewCard: NewCardScreen,
   Quiz: QuizScreen,
@@ -31,7 +31,7 @@ HomeStack.navigationOptions = {
 };
 
 const NewDeckStack = createStackNavigator({
-  NewDeck: NewDeckScreen
+  NewDeck: NewDeckContainer
 });
 
 NewDeckStack.navigationOptions = {

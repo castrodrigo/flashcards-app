@@ -1,7 +1,12 @@
 import React from "react";
-import { Platform, StatusBar, StyleSheet, View } from "react-native";
+import { Platform, StatusBar, View } from "react-native";
+import { createStore, applyMiddleware } from "redux";
+import { Provider } from "react-redux";
+import thunk from "redux-thunk";
 import { AppLoading, Asset, Font, Icon } from "expo";
 import AppNavigator from "./navigation/AppNavigator";
+import { composeWithDevTools } from "redux-devtools-extension";
+import reducers from "./reducers";
 
 export default class App extends React.Component {
   state = {
@@ -19,10 +24,17 @@ export default class App extends React.Component {
       );
     } else {
       return (
-        <View style={styles.container}>
-          {Platform.OS === "ios" && <StatusBar barStyle="default" />}
-          <AppNavigator />
-        </View>
+        <Provider
+          store={createStore(
+            reducers,
+            composeWithDevTools(applyMiddleware(thunk))
+          )}
+        >
+          <View style={{ flex: 1 }}>
+            {Platform.OS === "ios" && <StatusBar barStyle="default" />}
+            <AppNavigator />
+          </View>
+        </Provider>
       );
     }
   }
@@ -32,7 +44,6 @@ export default class App extends React.Component {
       Asset.loadAsync([]),
       Font.loadAsync({
         ...Icon.Ionicons.font,
-
         "space-mono": require("./assets/fonts/SpaceMono-Regular.ttf")
       })
     ]);
@@ -46,10 +57,3 @@ export default class App extends React.Component {
     this.setState({ isLoadingComplete: true });
   };
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff"
-  }
-});

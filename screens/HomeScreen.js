@@ -1,6 +1,6 @@
 import React from "react";
+import { View } from "react-native";
 import styled from "styled-components/native";
-import Header from "../components/Header";
 import DeckListItem from "../components/DeckListItem";
 
 const Container = styled.ScrollView`
@@ -8,14 +8,16 @@ const Container = styled.ScrollView`
 `;
 
 export default class HomeScreen extends React.Component {
-  static navigationOptions = {
-    header: <Header>My Decks</Header>
-  };
-
   render() {
     return (
       <Container>
-        <DeckListItem navigation={this.props.navigation} />
+        {this.props.decksMap.map(id => (
+          <DeckListItem
+            key={id}
+            deck={this.props.decks[id]}
+            navigation={this.props.navigation}
+          />
+        ))}
       </Container>
     );
   }

@@ -83,8 +83,7 @@ export default class NewDeckScreen extends React.Component {
   handleSubmit = () => {
     const { name, description } = this.state;
     if (name !== "") {
-      // return this.props.onSubmit({ name, description });
-      return;
+      return this.props.onSubmit({ name, description });
     }
     return this.setState({ error: true });
   };
