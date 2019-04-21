@@ -12,6 +12,9 @@ export function getDecks(decks) {
   };
 }
 
+export const handleGetDecks = () => dispatch =>
+  api.getDecks().then(decks => dispatch(getDecks(JSON.parse(decks))));
+
 export const getDeck = deck => ({
   type: GET_DECK,
   deck
