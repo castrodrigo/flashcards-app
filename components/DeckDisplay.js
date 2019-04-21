@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import styled from "styled-components/native";
 import Deck from "./Deck";
 
@@ -34,17 +35,27 @@ const HighLight = styled.Text`
   font-weight: bold;
 `;
 
-const DeckDisplay = ({ name, description }) => (
+const DeckDisplay = ({ name, description, cardsCount }) => (
   <Item>
     <Deck />
     <TextWrapper>
       <Title>{name}</Title>
       <Description>{description}</Description>
       <TotalCards>
-        Cards: <HighLight>12</HighLight>
+        Cards: <HighLight>{cardsCount}</HighLight>
       </TotalCards>
     </TextWrapper>
   </Item>
 );
+
+DeckDisplay.propTypes = {
+  name: PropTypes.string.isRequired,
+  description: PropTypes.string,
+  cardsCount: PropTypes.number
+};
+
+DeckDisplay.defaultProps = {
+  cardsCount: 0
+};
 
 export default DeckDisplay;

@@ -9,7 +9,7 @@ const Item = styled.TouchableOpacity`
 `;
 
 const DeckListItem = ({ navigation, deck }) => (
-  <Item onPress={() => navigation.navigate("Deck")}>
+  <Item onPress={() => navigation.navigate("Deck", { id: deck.id })}>
     <DeckDisplay {...deck} />
   </Item>
 );

@@ -5,7 +5,7 @@ import {
 } from "react-navigation";
 import TabBarIcon from "../components/TabBarIcon";
 import HomeContainer from "../screens/HomeContainer";
-import DeckScreen from "../screens/DeckScreen";
+import DeckContainer from "../screens/DeckContainer";
 import NewCardScreen from "../screens/NewCardScreen";
 import NewDeckContainer from "../screens/NewDeckContainer";
 import QuizScreen from "../screens/QuizScreen";
@@ -13,7 +13,7 @@ import QuizScoreScreen from "../screens/QuizScoreScreen";
 
 const HomeStack = createStackNavigator({
   Home: HomeContainer,
-  Deck: DeckScreen,
+  Deck: DeckContainer,
   NewCard: NewCardScreen,
   Quiz: QuizScreen,
   QuizScore: QuizScoreScreen

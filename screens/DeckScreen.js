@@ -46,7 +46,10 @@ export default class DeckScreen extends React.Component {
   render() {
     return (
       <Container>
-        <DeckDisplay />
+        <DeckDisplay
+          {...this.props.deck}
+          cardsCount={this.props.cards.length}
+        />
         <StartQuiz onPress={() => this.props.navigation.navigate("Quiz")}>
           <FontAwesome name={"question-circle-o"} size={20} color="#FFF" />
           <ButtonLabel>Start Quiz</ButtonLabel>
