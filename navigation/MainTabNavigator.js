@@ -7,7 +7,7 @@ import TabBarIcon from "../components/TabBarIcon";
 import HomeScreen from "../screens/HomeScreen";
 import DeckScreen from "../screens/DeckScreen";
 import NewCardScreen from "../screens/NewCardScreen";
-import NewDeckScreen from "../screens/NewDeckScreen";
+import NewDeckContainer from "../screens/NewDeckContainer";
 import QuizScreen from "../screens/QuizScreen";
 import QuizScoreScreen from "../screens/QuizScoreScreen";
 
@@ -31,7 +31,7 @@ HomeStack.navigationOptions = {
 };
 
 const NewDeckStack = createStackNavigator({
-  NewDeck: NewDeckScreen
+  NewDeck: NewDeckContainer
 });
 
 NewDeckStack.navigationOptions = {

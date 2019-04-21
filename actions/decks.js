@@ -1,5 +1,5 @@
 import * as api from "../api";
-import * as uuidv1 from "uuid/v1";
+const uuidv1 = require("uuid/v1");
 
 export const GET_DECKS = "GET_DECKS";
 export const GET_DECK = "GET_DECK";
@@ -22,11 +22,13 @@ const addDeck = deck => ({
   deck
 });
 
-export const handleAddDeck = data => dispatch =>
-  api
+export const handleAddDeck = data => dispatch => {
+  const id = uuidv1();
+  const deck = { id, ...data, timestamp: Date.now() };
+  return api
     .addDeck({
-      id: uuidv1(),
-      ...data,
-      timestamp: Date.now()
+      deck,
+      key: id
     })
-    .then(deck => dispatch(addDeck(deck)));
+    .then(() => dispatch(addDeck(deck)));
+};
