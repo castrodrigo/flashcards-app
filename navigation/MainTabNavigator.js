@@ -6,7 +6,7 @@ import {
 import TabBarIcon from "../components/TabBarIcon";
 import HomeContainer from "../screens/HomeContainer";
 import DeckContainer from "../screens/DeckContainer";
-import NewCardScreen from "../screens/NewCardScreen";
+import NewCardContainer from "../screens/NewCardContainer";
 import NewDeckContainer from "../screens/NewDeckContainer";
 import QuizScreen from "../screens/QuizScreen";
 import QuizScoreScreen from "../screens/QuizScoreScreen";
@@ -14,7 +14,7 @@ import QuizScoreScreen from "../screens/QuizScoreScreen";
 const HomeStack = createStackNavigator({
   Home: HomeContainer,
   Deck: DeckContainer,
-  NewCard: NewCardScreen,
+  NewCard: NewCardContainer,
   Quiz: QuizScreen,
   QuizScore: QuizScoreScreen
 });
