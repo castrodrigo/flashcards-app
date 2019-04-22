@@ -1,15 +1,17 @@
 import React from "react";
 import { connect } from "react-redux";
-import { handleAddDeck } from "../actions/decks";
 import QuizScreen from "./QuizScreen";
 import QuizScoreScreen from "./QuizScoreScreen";
 import Header from "../components/Header";
 
 class QuizContainer extends React.Component {
-  state = {
+  defaultState = {
     correct: [],
     wrong: [],
-    index: 0,
+    index: 0
+  };
+  state = {
+    ...this.defaultState,
     total: 0
   };
 
@@ -28,6 +30,10 @@ class QuizContainer extends React.Component {
     }));
   };
 
+  handleRestart = () => {
+    this.setState({ ...this.defaultState });
+  };
+
   calculateScore = () => {
     const { total, wrong } = this.state;
     const each = Math.round(100 / total);
@@ -44,7 +50,7 @@ class QuizContainer extends React.Component {
         <QuizScoreScreen
           deckName={deck.name}
           score={this.calculateScore()}
-          onRestart={this.props.restart}
+          onRestart={this.handleRestart}
           onFinish={this.props.finish}
         />
       );
@@ -71,7 +77,6 @@ const mapStateToProps = (
     deckId,
     cardsMap: Object.keys(cards[deckId]),
     cards: cards[deckId],
-    restart: () => navigate("Quiz", { id: deckId }),
     finish: () => navigate("Deck", { id: deckId })
   };
 };
