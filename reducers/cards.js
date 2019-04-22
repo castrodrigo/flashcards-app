@@ -12,15 +12,19 @@ export default (state = {}, action) => {
       };
     case GET_CARDS:
       const { cards } = action;
-      const cardData = Object.keys(cards).map(id => ({
-        [cards[id].deckId]: {
-          ...cardData[cards[id].deckId],
-          [id]: cards[id]
-        }
-      }));
+      const cardsObject = {};
+      const decksObject = {};
+      cards !== null &&
+        Object.keys(action.cards).map(card => {
+          cardsObject[card] = cards[card];
+          decksObject[cards[card].deckId] = {
+            ...state[cards[card].deckId],
+            ...cardsObject
+          };
+        });
       return {
         ...state,
-        ...cardData
+        ...decksObject
       };
     default:
       return state;
