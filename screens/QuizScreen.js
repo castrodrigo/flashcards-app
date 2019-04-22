@@ -91,7 +91,7 @@ const Correct = styled(Button)`
   background: #7ac70c;
   border-bottom-color: #95d353;
   ${({ disabled }) =>
-    disabled && " background: #ccc;border-bottom-color: #c0c0c0;"}
+    disabled && "background: #ccc; border-bottom-color: #c0c0c0;"}
 `;
 
 const Wrong = styled(Button)`
@@ -100,7 +100,7 @@ const Wrong = styled(Button)`
   background: #e53a3b;
   border-bottom-color: #ed6565;
   ${({ disabled }) =>
-    disabled && " background: #ccc;border-bottom-color: #c0c0c0;"}
+    disabled && "background: #ccc; border-bottom-color: #c0c0c0;"}
 `;
 
 export default class QuizScreen extends React.Component {

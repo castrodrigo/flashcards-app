@@ -31,6 +31,8 @@ const Button = styled.TouchableOpacity`
 const StartQuiz = styled(Button)`
   background: #a560e7;
   border-bottom-color: #b881ec;
+  ${({ disabled }) =>
+    disabled && "background: #ccc; border-bottom-color: #c0c0c0;"}
 `;
 
 const AddNewCard = styled(Button)`
@@ -44,18 +46,17 @@ export default class DeckScreen extends React.Component {
   });
 
   render() {
+    const count = this.props.cardsMap.length;
     return (
       <Container>
-        <DeckDisplay
-          {...this.props.deck}
-          cardsCount={this.props.cardsMap.length}
-        />
+        <DeckDisplay {...this.props.deck} cardsCount={count} />
         <StartQuiz
           onPress={() =>
             this.props.navigation.navigate("Quiz", {
               deckId: this.props.deck.id
             })
           }
+          disabled={count === 0}
         >
           <FontAwesome name={"question-circle-o"} size={20} color="#FFF" />
           <ButtonLabel>Start Quiz</ButtonLabel>
