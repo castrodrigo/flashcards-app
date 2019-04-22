@@ -83,8 +83,7 @@ export default class NewCardScreen extends React.Component {
   handleSubmit = () => {
     const { question, answer } = this.state;
     if (question !== "" && answer !== "") {
-      // return this.props.onSubmit({ question, answer });
-      return;
+      return this.props.onSubmit({ question, answer });
     }
     return this.setState({ error: true });
   };
@@ -94,7 +93,7 @@ export default class NewCardScreen extends React.Component {
   render() {
     return (
       <Container>
-        <Title>Creating a new Card</Title>
+        <Title>Creating a new card for "{this.props.deck.name}"</Title>
         <Description>
           You can create as many Cards you want in this Deck. Each Card behaves
           as a single question in the Quiz.
