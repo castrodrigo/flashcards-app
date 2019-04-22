@@ -4,6 +4,6 @@ import { getDecks } from "./decks";
 
 export const handleInitialData = () => dispatch =>
   Promise.all([api.getCards(), api.getDecks()]).then(([cards, decks]) => {
-    dispatch(getDecks(JSON.parse(decks)));
-    dispatch(getCards(JSON.parse(cards)));
+    dispatch(getDecks(decks));
+    dispatch(getCards(cards));
   });

@@ -4,7 +4,9 @@ const DECK_STORAGE_KEY = "flashcards-app:deck";
 const CARD_STORAGE_KEY = "flashcards-app:card";
 
 export function getDecks() {
-  return AsyncStorage.getItem(DECK_STORAGE_KEY);
+  return AsyncStorage.getItem(DECK_STORAGE_KEY).then(decks =>
+    JSON.parse(decks)
+  );
 }
 
 export const addDeck = ({ deck, key }) =>
@@ -16,7 +18,9 @@ export const addDeck = ({ deck, key }) =>
   );
 
 export function getCards() {
-  return AsyncStorage.getItem(CARD_STORAGE_KEY);
+  return AsyncStorage.getItem(CARD_STORAGE_KEY).then(decks =>
+    JSON.parse(decks)
+  );
 }
 
 export const addCard = ({ card, key }) =>

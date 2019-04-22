@@ -2,7 +2,6 @@ import React from "react";
 import { View } from "react-native";
 import styled from "styled-components/native";
 import { FontAwesome, AntDesign } from "@expo/vector-icons";
-import Header from "../components/Header";
 
 const Container = styled.ScrollView`
   flex: 1;
@@ -92,7 +91,7 @@ const Correct = styled(Button)`
   background: #7ac70c;
   border-bottom-color: #95d353;
   ${({ disabled }) =>
-    disabled && " background: #ccc;border-bottom-color: #c0c0c0;"}
+    disabled && "background: #ccc; border-bottom-color: #c0c0c0;"}
 `;
 
 const Wrong = styled(Button)`
@@ -101,14 +100,10 @@ const Wrong = styled(Button)`
   background: #e53a3b;
   border-bottom-color: #ed6565;
   ${({ disabled }) =>
-    disabled && " background: #ccc;border-bottom-color: #c0c0c0;"}
+    disabled && "background: #ccc; border-bottom-color: #c0c0c0;"}
 `;
 
 export default class QuizScreen extends React.Component {
-  static navigationOptions = ({ navigation }) => ({
-    header: <Header navigation={navigation}>Quiz</Header>
-  });
-
   state = {
     showAnswer: false
   };
@@ -118,24 +113,24 @@ export default class QuizScreen extends React.Component {
   };
 
   handleSubmit = status => {
-    // this.props.submit(status)
+    this.setState({ showAnswer: false });
+    this.props.submit(status);
   };
 
   render() {
     return (
       <Container>
-        <Title>Deck Lorem Lorem Quiz</Title>
+        <Title>Quiz of "{this.props.deckName}"</Title>
         <TotalCards>
-          Card <HighLight>1</HighLight> of <HighLight>12</HighLight>
+          Card <HighLight>{this.props.current}</HighLight> of{" "}
+          <HighLight>{this.props.total}</HighLight>
         </TotalCards>
         <CardContainer>
           <View style={{ flex: 1 }} />
           <Card>
-            <CardQuestion>
-              What is the color of the white horse of Napoelon?
-            </CardQuestion>
+            <CardQuestion>{this.props.card.question}</CardQuestion>
             {this.state.showAnswer ? (
-              <CardAnswer>White</CardAnswer>
+              <CardAnswer>{this.props.card.answer}</CardAnswer>
             ) : (
               <ShowAnswer onPress={this.handleShowAnswer}>
                 <FontAwesome name={"sticky-note-o"} size={20} color="#FFF" />
@@ -147,7 +142,7 @@ export default class QuizScreen extends React.Component {
         </CardContainer>
         <SubmitContainer>
           <Correct
-            onPress={() => this.handleSubmit(true)}
+            onPress={() => this.handleSubmit("correct")}
             disabled={!this.state.showAnswer}
           >
             <AntDesign name={"checkcircleo"} size={20} color="#FFF" />
@@ -155,7 +150,7 @@ export default class QuizScreen extends React.Component {
           </Correct>
           <View style={{ flex: 1 }} />
           <Wrong
-            onPress={() => this.handleSubmit(false)}
+            onPress={() => this.handleSubmit("wrong")}
             disabled={!this.state.showAnswer}
           >
             <AntDesign name={"closecircleo"} size={20} color="#FFF" />

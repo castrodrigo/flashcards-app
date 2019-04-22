@@ -44,7 +44,7 @@ const Card = styled.View`
 
 const Score = styled.Text`
   background: #fff;
-  font-size: 60px;
+  font-size: 56px;
   text-align: center;
   font-weight: bold;
   letter-spacing: 1px;
@@ -62,7 +62,7 @@ const ButtonLabel = styled.Text`
 `;
 
 const Button = styled.TouchableOpacity`
-  padding: 10px;
+  padding: 20px 10px;
   background-color: #0077cc;
   border-radius: 12px;
   border-bottom-width: 3px;
@@ -77,29 +77,25 @@ const SubmitContainer = styled.View`
 `;
 
 export default class QuizScoreScreen extends React.Component {
-  static navigationOptions = ({ navigation }) => ({
-    header: <Header navigation={navigation}>Quiz: Your Score</Header>
-  });
-
   render() {
     return (
       <Container>
         <Title>Completed!</Title>
         <TotalCards>
-          You have completed <HighLight>Deck Lorem Lorem</HighLight> Quiz!
+          You have completed <HighLight>{this.props.deckName}</HighLight> Quiz!
         </TotalCards>
         <CardContainer>
           <Card>
-            <Score>90%</Score>
+            <Score>{this.props.score}%</Score>
           </Card>
         </CardContainer>
         <SubmitContainer>
-          <Button onPress={() => this.props.navigation.navigate("Quiz")}>
+          <Button onPress={this.props.onRestart}>
             <MaterialCommunityIcons name={"restart"} size={20} color="#FFF" />
             <ButtonLabel>Run Again!</ButtonLabel>
           </Button>
           <View style={{ flex: 1 }} />
-          <Button onPress={() => this.props.navigation.navigate("Deck")}>
+          <Button onPress={this.props.onFinish}>
             <MaterialCommunityIcons name={"door"} size={20} color="#FFF" />
             <ButtonLabel>Go to Deck</ButtonLabel>
           </Button>

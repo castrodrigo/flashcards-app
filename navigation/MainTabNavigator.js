@@ -8,15 +8,13 @@ import HomeContainer from "../screens/HomeContainer";
 import DeckContainer from "../screens/DeckContainer";
 import NewCardContainer from "../screens/NewCardContainer";
 import NewDeckContainer from "../screens/NewDeckContainer";
-import QuizScreen from "../screens/QuizScreen";
-import QuizScoreScreen from "../screens/QuizScoreScreen";
+import QuizContainer from "../screens/QuizContainer";
 
 const HomeStack = createStackNavigator({
   Home: HomeContainer,
   Deck: DeckContainer,
   NewCard: NewCardContainer,
-  Quiz: QuizScreen,
-  QuizScore: QuizScoreScreen
+  Quiz: QuizContainer
 });
 
 HomeStack.navigationOptions = {
