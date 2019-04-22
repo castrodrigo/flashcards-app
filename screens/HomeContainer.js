@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import { handleGetDecks } from "../actions/decks";
+import { handleInitialData } from "../actions/shared";
 import HomeScreen from "./HomeScreen";
 import Header from "../components/Header";
 
@@ -9,28 +9,30 @@ class HomeContainer extends React.Component {
     header: <Header>My Decks</Header>
   };
   componentDidMount() {
-    this.props.getDecks();
+    this.props.getInitialData();
   }
   render() {
     return (
       <HomeScreen
         decksMap={this.props.decksMap}
         decks={this.props.decks}
+        cards={this.props.cards}
         navigation={this.props.navigation}
       />
     );
   }
 }
 
-const mapStateToProps = ({ decks }) => ({
+const mapStateToProps = ({ decks, cards }) => ({
   decksMap: Object.keys(decks).sort(
     (a, b) => decks[b].timestamp - decks[a].timestamp
   ),
+  cards,
   decks
 });
 
 const mapDispatchToProps = dispatch => ({
-  getDecks: () => dispatch(handleGetDecks())
+  getInitialData: () => dispatch(handleInitialData())
 });
 
 export default connect(
