@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { Keyboard } from "react-native";
 import styled from "styled-components/native";
 import Header from "../components/Header";
@@ -72,3 +73,7 @@ export default class NewDeckScreen extends React.Component {
     );
   }
 }
+
+NewDeckScreen.propTypes = {
+  onSubmit: PropTypes.func.isRequired
+};

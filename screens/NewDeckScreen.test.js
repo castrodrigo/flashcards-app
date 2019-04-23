@@ -1,15 +1,14 @@
 import React from "react";
 import { shallow } from "enzyme";
-import NewCardScreen from "./NewCardScreen";
+import NewDeckScreen from "./NewDeckScreen";
 
 const props = {
-  deck: { id: "321", name: "Deck Test" },
   onSubmit: jest.fn()
 };
 
-describe("Render NewCardScreen", () => {
+describe("Render NewDeckScreen", () => {
   it("should render successfully", () => {
-    const wrapper = shallow(<NewCardScreen {...props} />);
+    const wrapper = shallow(<NewDeckScreen {...props} />);
 
     expect(wrapper).toMatchSnapshot();
   });

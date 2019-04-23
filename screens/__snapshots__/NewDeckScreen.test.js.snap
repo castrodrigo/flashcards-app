@@ -1,15 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Render NewCardScreen should render successfully 1`] = `
+exports[`Render NewDeckScreen should render successfully 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <NewCardScreen
-    deck={
-      Object {
-        "id": "321",
-        "name": "Deck Test",
-      }
-    }
+  Symbol(enzyme.__unrendered__): <NewDeckScreen
     onSubmit={[MockFunction]}
   />,
   Symbol(enzyme.__renderer__): Object {
@@ -28,31 +22,29 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <ForwardRef>
-          Creating a new card for "
-          Deck Test
-          "
+          Creating a new Deck
         </ForwardRef>,
         <ForwardRef>
-          You can create as many Cards you want in this Deck. Each Card behaves as a single question in the Quiz.
+          You can create a Deck to group a collection of topics that you would like to revisit. It is possible to trigger a Quiz through all the inserted questions.
         </ForwardRef>,
         <ForwardRef>
           <ForwardRef
-            maxLength={60}
+            maxLength={30}
             onBlur={[Function]}
             onChangeText={[Function]}
-            placeholder="Question"
+            placeholder="Name"
           />
           <ForwardRef
             maxLength={60}
             onBlur={[Function]}
             onChangeText={[Function]}
-            placeholder="Answer"
+            placeholder="Description"
           />
           <ForwardRef
             onPress={[Function]}
           >
             <ForwardRef>
-              Create New Card
+              Create New Deck
             </ForwardRef>
           </ForwardRef>
         </ForwardRef>,
@@ -65,18 +57,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "children": Array [
-            "Creating a new card for \\"",
-            "Deck Test",
-            "\\"",
-          ],
+          "children": "Creating a new Deck",
         },
         "ref": null,
-        "rendered": Array [
-          "Creating a new card for \\"",
-          "Deck Test",
-          "\\"",
-        ],
+        "rendered": "Creating a new Deck",
         "type": Object {
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
@@ -122,10 +106,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "children": "You can create as many Cards you want in this Deck. Each Card behaves as a single question in the Quiz.",
+          "children": "You can create a Deck to group a collection of topics that you would like to revisit. It is possible to trigger a Quiz through all the inserted questions.",
         },
         "ref": null,
-        "rendered": "You can create as many Cards you want in this Deck. Each Card behaves as a single question in the Quiz.",
+        "rendered": "You can create a Deck to group a collection of topics that you would like to revisit. It is possible to trigger a Quiz through all the inserted questions.",
         "type": Object {
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
@@ -174,23 +158,23 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <ForwardRef
-              maxLength={60}
+              maxLength={30}
               onBlur={[Function]}
               onChangeText={[Function]}
-              placeholder="Question"
+              placeholder="Name"
             />,
             <ForwardRef
               maxLength={60}
               onBlur={[Function]}
               onChangeText={[Function]}
-              placeholder="Answer"
+              placeholder="Description"
             />,
             false,
             <ForwardRef
               onPress={[Function]}
             >
               <ForwardRef>
-                Create New Card
+                Create New Deck
               </ForwardRef>
             </ForwardRef>,
           ],
@@ -202,10 +186,10 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "function",
             "props": Object {
-              "maxLength": 60,
+              "maxLength": 30,
               "onBlur": [Function],
               "onChangeText": [Function],
-              "placeholder": "Question",
+              "placeholder": "Name",
             },
             "ref": null,
             "rendered": null,
@@ -246,7 +230,7 @@ ShallowWrapper {
               "maxLength": 60,
               "onBlur": [Function],
               "onChangeText": [Function],
-              "placeholder": "Answer",
+              "placeholder": "Description",
             },
             "ref": null,
             "rendered": null,
@@ -286,7 +270,7 @@ ShallowWrapper {
             "nodeType": "function",
             "props": Object {
               "children": <ForwardRef>
-                Create New Card
+                Create New Deck
               </ForwardRef>,
               "onPress": [Function],
             },
@@ -296,10 +280,10 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "function",
               "props": Object {
-                "children": "Create New Card",
+                "children": "Create New Deck",
               },
               "ref": null,
-              "rendered": "Create New Card",
+              "rendered": "Create New Deck",
               "type": Object {
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
@@ -407,31 +391,29 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <ForwardRef>
-            Creating a new card for "
-            Deck Test
-            "
+            Creating a new Deck
           </ForwardRef>,
           <ForwardRef>
-            You can create as many Cards you want in this Deck. Each Card behaves as a single question in the Quiz.
+            You can create a Deck to group a collection of topics that you would like to revisit. It is possible to trigger a Quiz through all the inserted questions.
           </ForwardRef>,
           <ForwardRef>
             <ForwardRef
-              maxLength={60}
+              maxLength={30}
               onBlur={[Function]}
               onChangeText={[Function]}
-              placeholder="Question"
+              placeholder="Name"
             />
             <ForwardRef
               maxLength={60}
               onBlur={[Function]}
               onChangeText={[Function]}
-              placeholder="Answer"
+              placeholder="Description"
             />
             <ForwardRef
               onPress={[Function]}
             >
               <ForwardRef>
-                Create New Card
+                Create New Deck
               </ForwardRef>
             </ForwardRef>
           </ForwardRef>,
@@ -444,18 +426,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "children": Array [
-              "Creating a new card for \\"",
-              "Deck Test",
-              "\\"",
-            ],
+            "children": "Creating a new Deck",
           },
           "ref": null,
-          "rendered": Array [
-            "Creating a new card for \\"",
-            "Deck Test",
-            "\\"",
-          ],
+          "rendered": "Creating a new Deck",
           "type": Object {
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
@@ -501,10 +475,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "children": "You can create as many Cards you want in this Deck. Each Card behaves as a single question in the Quiz.",
+            "children": "You can create a Deck to group a collection of topics that you would like to revisit. It is possible to trigger a Quiz through all the inserted questions.",
           },
           "ref": null,
-          "rendered": "You can create as many Cards you want in this Deck. Each Card behaves as a single question in the Quiz.",
+          "rendered": "You can create a Deck to group a collection of topics that you would like to revisit. It is possible to trigger a Quiz through all the inserted questions.",
           "type": Object {
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
@@ -553,23 +527,23 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <ForwardRef
-                maxLength={60}
+                maxLength={30}
                 onBlur={[Function]}
                 onChangeText={[Function]}
-                placeholder="Question"
+                placeholder="Name"
               />,
               <ForwardRef
                 maxLength={60}
                 onBlur={[Function]}
                 onChangeText={[Function]}
-                placeholder="Answer"
+                placeholder="Description"
               />,
               false,
               <ForwardRef
                 onPress={[Function]}
               >
                 <ForwardRef>
-                  Create New Card
+                  Create New Deck
                 </ForwardRef>
               </ForwardRef>,
             ],
@@ -581,10 +555,10 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "function",
               "props": Object {
-                "maxLength": 60,
+                "maxLength": 30,
                 "onBlur": [Function],
                 "onChangeText": [Function],
-                "placeholder": "Question",
+                "placeholder": "Name",
               },
               "ref": null,
               "rendered": null,
@@ -625,7 +599,7 @@ ShallowWrapper {
                 "maxLength": 60,
                 "onBlur": [Function],
                 "onChangeText": [Function],
-                "placeholder": "Answer",
+                "placeholder": "Description",
               },
               "ref": null,
               "rendered": null,
@@ -665,7 +639,7 @@ ShallowWrapper {
               "nodeType": "function",
               "props": Object {
                 "children": <ForwardRef>
-                  Create New Card
+                  Create New Deck
                 </ForwardRef>,
                 "onPress": [Function],
               },
@@ -675,10 +649,10 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "function",
                 "props": Object {
-                  "children": "Create New Card",
+                  "children": "Create New Deck",
                 },
                 "ref": null,
-                "rendered": "Create New Card",
+                "rendered": "Create New Deck",
                 "type": Object {
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
