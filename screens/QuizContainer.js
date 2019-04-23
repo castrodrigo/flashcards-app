@@ -67,7 +67,7 @@ class QuizContainer extends React.Component {
         deckName={deck.name}
         total={total}
         current={current}
-        submit={status => this.handleSubmitResponse(cardsMap[index], status)}
+        onSubmit={status => this.handleSubmitResponse(cardsMap[index], status)}
         card={cards[cardsMap[index]]}
       />
     );

@@ -84,7 +84,7 @@ export default class QuizScreen extends React.Component {
 
   handleSubmit = status => {
     this.setState({ showAnswer: false });
-    this.props.submit(status);
+    this.props.onSubmit(status);
   };
 
   render() {
@@ -146,5 +146,6 @@ QuizScreen.propTypes = {
   card: PropTypes.shape({
     question: PropTypes.string.isRequired,
     answer: PropTypes.string.isRequired
-  })
+  }),
+  onSubmit: PropTypes.func.isRequired
 };

@@ -1,0 +1,1901 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render QuizScreen should render successfully 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <QuizScreen
+    card={
+      Object {
+        "answer": "Answer!",
+        "question": "Question?",
+      }
+    }
+    current={10}
+    deckName="Deck Test"
+    onSubmit={[MockFunction]}
+    total={20}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        <ForwardRef>
+          Quiz of "
+          Deck Test
+          "
+        </ForwardRef>,
+        <ForwardRef>
+          Card 
+          <ForwardRef>
+            10
+          </ForwardRef>
+           of
+           
+          <ForwardRef>
+            20
+          </ForwardRef>
+        </ForwardRef>,
+        <ForwardRef>
+          <Component
+            style={
+              Object {
+                "flex": 1,
+              }
+            }
+          />
+          <ForwardRef>
+            <ForwardRef>
+              Question?
+            </ForwardRef>
+            <ForwardRef
+              onPress={[Function]}
+            >
+              <Icon
+                allowFontScaling={false}
+                color="#FFF"
+                name="sticky-note-o"
+                size={20}
+              />
+              <ForwardRef>
+                Show Answer
+              </ForwardRef>
+            </ForwardRef>
+          </ForwardRef>
+          <Component
+            style={
+              Object {
+                "flex": 1,
+              }
+            }
+          />
+        </ForwardRef>,
+        <ForwardRef>
+          <ForwardRef
+            disabled={true}
+            onPress={[Function]}
+          >
+            <Icon
+              allowFontScaling={false}
+              color="#FFF"
+              name="checkcircleo"
+              size={20}
+            />
+            <ForwardRef>
+              Correct!
+            </ForwardRef>
+          </ForwardRef>
+          <Component
+            style={
+              Object {
+                "flex": 1,
+              }
+            }
+          />
+          <ForwardRef
+            disabled={true}
+            onPress={[Function]}
+          >
+            <Icon
+              allowFontScaling={false}
+              color="#FFF"
+              name="closecircleo"
+              size={20}
+            />
+            <ForwardRef>
+              Wrong!
+            </ForwardRef>
+          </ForwardRef>
+        </ForwardRef>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            "Quiz of \\"",
+            "Deck Test",
+            "\\"",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Quiz of \\"",
+          "Deck Test",
+          "\\"",
+        ],
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "displayName": "Styled(Component)",
+          "inlineStyle": InlineStyle {
+            "rules": Array [
+              "
+  font-size: 24px;
+  font-weight: bold;
+  color: #1baff6;
+",
+            ],
+          },
+          "propTypes": Object {
+            "accessible": [Function],
+            "adjustsFontSizeToFit": [Function],
+            "allowFontScaling": [Function],
+            "disabled": [Function],
+            "ellipsizeMode": [Function],
+            "minimumFontScale": [Function],
+            "nativeID": [Function],
+            "numberOfLines": [Function],
+            "onLayout": [Function],
+            "onLongPress": [Function],
+            "onPress": [Function],
+            "pressRetentionOffset": [Function],
+            "selectable": [Function],
+            "selectionColor": [Function],
+            "style": [Function],
+            "suppressHighlighting": [Function],
+            "testID": [Function],
+            "textBreakStrategy": [Function],
+          },
+          "render": [Function],
+          "styledComponentId": "StyledNativeComponent",
+          "target": [Function],
+          "withComponent": [Function],
+          Symbol(Symbol.hasInstance): [Function],
+        },
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            "Card ",
+            <ForwardRef>
+              10
+            </ForwardRef>,
+            " of",
+            " ",
+            <ForwardRef>
+              20
+            </ForwardRef>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Card ",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": 10,
+            },
+            "ref": null,
+            "rendered": 10,
+            "type": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "displayName": "Styled(Component)",
+              "inlineStyle": InlineStyle {
+                "rules": Array [
+                  "
+  font-weight: bold;
+",
+                ],
+              },
+              "propTypes": Object {
+                "accessible": [Function],
+                "adjustsFontSizeToFit": [Function],
+                "allowFontScaling": [Function],
+                "disabled": [Function],
+                "ellipsizeMode": [Function],
+                "minimumFontScale": [Function],
+                "nativeID": [Function],
+                "numberOfLines": [Function],
+                "onLayout": [Function],
+                "onLongPress": [Function],
+                "onPress": [Function],
+                "pressRetentionOffset": [Function],
+                "selectable": [Function],
+                "selectionColor": [Function],
+                "style": [Function],
+                "suppressHighlighting": [Function],
+                "testID": [Function],
+                "textBreakStrategy": [Function],
+              },
+              "render": [Function],
+              "styledComponentId": "StyledNativeComponent",
+              "target": [Function],
+              "withComponent": [Function],
+              Symbol(Symbol.hasInstance): [Function],
+            },
+          },
+          " of",
+          " ",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": 20,
+            },
+            "ref": null,
+            "rendered": 20,
+            "type": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "displayName": "Styled(Component)",
+              "inlineStyle": InlineStyle {
+                "rules": Array [
+                  "
+  font-weight: bold;
+",
+                ],
+              },
+              "propTypes": Object {
+                "accessible": [Function],
+                "adjustsFontSizeToFit": [Function],
+                "allowFontScaling": [Function],
+                "disabled": [Function],
+                "ellipsizeMode": [Function],
+                "minimumFontScale": [Function],
+                "nativeID": [Function],
+                "numberOfLines": [Function],
+                "onLayout": [Function],
+                "onLongPress": [Function],
+                "onPress": [Function],
+                "pressRetentionOffset": [Function],
+                "selectable": [Function],
+                "selectionColor": [Function],
+                "style": [Function],
+                "suppressHighlighting": [Function],
+                "testID": [Function],
+                "textBreakStrategy": [Function],
+              },
+              "render": [Function],
+              "styledComponentId": "StyledNativeComponent",
+              "target": [Function],
+              "withComponent": [Function],
+              Symbol(Symbol.hasInstance): [Function],
+            },
+          },
+        ],
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "displayName": "Styled(Component)",
+          "inlineStyle": InlineStyle {
+            "rules": Array [
+              "
+  font-size: 14px;
+  margin-top: 10px;
+",
+            ],
+          },
+          "propTypes": Object {
+            "accessible": [Function],
+            "adjustsFontSizeToFit": [Function],
+            "allowFontScaling": [Function],
+            "disabled": [Function],
+            "ellipsizeMode": [Function],
+            "minimumFontScale": [Function],
+            "nativeID": [Function],
+            "numberOfLines": [Function],
+            "onLayout": [Function],
+            "onLongPress": [Function],
+            "onPress": [Function],
+            "pressRetentionOffset": [Function],
+            "selectable": [Function],
+            "selectionColor": [Function],
+            "style": [Function],
+            "suppressHighlighting": [Function],
+            "testID": [Function],
+            "textBreakStrategy": [Function],
+          },
+          "render": [Function],
+          "styledComponentId": "StyledNativeComponent",
+          "target": [Function],
+          "withComponent": [Function],
+          Symbol(Symbol.hasInstance): [Function],
+        },
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <Component
+              style={
+                Object {
+                  "flex": 1,
+                }
+              }
+            />,
+            <ForwardRef>
+              <ForwardRef>
+                Question?
+              </ForwardRef>
+              <ForwardRef
+                onPress={[Function]}
+              >
+                <Icon
+                  allowFontScaling={false}
+                  color="#FFF"
+                  name="sticky-note-o"
+                  size={20}
+                />
+                <ForwardRef>
+                  Show Answer
+                </ForwardRef>
+              </ForwardRef>
+            </ForwardRef>,
+            <Component
+              style={
+                Object {
+                  "flex": 1,
+                }
+              }
+            />,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "style": Object {
+                "flex": 1,
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": Array [
+                <ForwardRef>
+                  Question?
+                </ForwardRef>,
+                <ForwardRef
+                  onPress={[Function]}
+                >
+                  <Icon
+                    allowFontScaling={false}
+                    color="#FFF"
+                    name="sticky-note-o"
+                    size={20}
+                  />
+                  <ForwardRef>
+                    Show Answer
+                  </ForwardRef>
+                </ForwardRef>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": "Question?",
+                },
+                "ref": null,
+                "rendered": "Question?",
+                "type": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "displayName": "Styled(Component)",
+                  "inlineStyle": InlineStyle {
+                    "rules": Array [
+                      "
+  margin-bottom: 30px;
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+",
+                    ],
+                  },
+                  "propTypes": Object {
+                    "accessible": [Function],
+                    "adjustsFontSizeToFit": [Function],
+                    "allowFontScaling": [Function],
+                    "disabled": [Function],
+                    "ellipsizeMode": [Function],
+                    "minimumFontScale": [Function],
+                    "nativeID": [Function],
+                    "numberOfLines": [Function],
+                    "onLayout": [Function],
+                    "onLongPress": [Function],
+                    "onPress": [Function],
+                    "pressRetentionOffset": [Function],
+                    "selectable": [Function],
+                    "selectionColor": [Function],
+                    "style": [Function],
+                    "suppressHighlighting": [Function],
+                    "testID": [Function],
+                    "textBreakStrategy": [Function],
+                  },
+                  "render": [Function],
+                  "styledComponentId": "StyledNativeComponent",
+                  "target": [Function],
+                  "withComponent": [Function],
+                  Symbol(Symbol.hasInstance): [Function],
+                },
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": Array [
+                    <Icon
+                      allowFontScaling={false}
+                      color="#FFF"
+                      name="sticky-note-o"
+                      size={20}
+                    />,
+                    <ForwardRef>
+                      Show Answer
+                    </ForwardRef>,
+                  ],
+                  "onPress": [Function],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "allowFontScaling": false,
+                      "color": "#FFF",
+                      "name": "sticky-note-o",
+                      "size": 20,
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "children": "Show Answer",
+                    },
+                    "ref": null,
+                    "rendered": "Show Answer",
+                    "type": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "displayName": "Styled(Component)",
+                      "inlineStyle": InlineStyle {
+                        "rules": Array [
+                          "
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 0 10px;
+  align-self: center;
+",
+                        ],
+                      },
+                      "propTypes": Object {
+                        "accessible": [Function],
+                        "adjustsFontSizeToFit": [Function],
+                        "allowFontScaling": [Function],
+                        "disabled": [Function],
+                        "ellipsizeMode": [Function],
+                        "minimumFontScale": [Function],
+                        "nativeID": [Function],
+                        "numberOfLines": [Function],
+                        "onLayout": [Function],
+                        "onLongPress": [Function],
+                        "onPress": [Function],
+                        "pressRetentionOffset": [Function],
+                        "selectable": [Function],
+                        "selectionColor": [Function],
+                        "style": [Function],
+                        "suppressHighlighting": [Function],
+                        "testID": [Function],
+                        "textBreakStrategy": [Function],
+                      },
+                      "render": [Function],
+                      "styledComponentId": "StyledNativeComponent",
+                      "target": [Function],
+                      "withComponent": [Function],
+                      Symbol(Symbol.hasInstance): [Function],
+                    },
+                  },
+                ],
+                "type": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "displayName": "Styled(Styled(TouchableOpacity))",
+                  "getDefaultProps": [Function],
+                  "inlineStyle": InlineStyle {
+                    "rules": Array [
+                      "
+  padding: 10px;
+  margin-top: 32px;
+  border-radius: 12px;
+  border-bottom-width: 3px;
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+",
+                      "
+  background: #a560e7;
+  border-bottom-color: #b881ec;
+",
+                    ],
+                  },
+                  "render": [Function],
+                  "styledComponentId": "StyledNativeComponent",
+                  "target": [Function],
+                  "withComponent": [Function],
+                  Symbol(Symbol.hasInstance): [Function],
+                },
+              },
+            ],
+            "type": [MockFunction],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "style": Object {
+                "flex": 1,
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "displayName": "Styled(Component)",
+          "inlineStyle": InlineStyle {
+            "rules": Array [
+              "
+  flex-direction: row;
+  padding: 60px 10px;
+  justify-content: center;
+",
+            ],
+          },
+          "render": [Function],
+          "styledComponentId": "StyledNativeComponent",
+          "target": [Function],
+          "withComponent": [Function],
+          Symbol(Symbol.hasInstance): [Function],
+        },
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <ForwardRef
+              disabled={true}
+              onPress={[Function]}
+            >
+              <Icon
+                allowFontScaling={false}
+                color="#FFF"
+                name="checkcircleo"
+                size={20}
+              />
+              <ForwardRef>
+                Correct!
+              </ForwardRef>
+            </ForwardRef>,
+            <Component
+              style={
+                Object {
+                  "flex": 1,
+                }
+              }
+            />,
+            <ForwardRef
+              disabled={true}
+              onPress={[Function]}
+            >
+              <Icon
+                allowFontScaling={false}
+                color="#FFF"
+                name="closecircleo"
+                size={20}
+              />
+              <ForwardRef>
+                Wrong!
+              </ForwardRef>
+            </ForwardRef>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": Array [
+                <Icon
+                  allowFontScaling={false}
+                  color="#FFF"
+                  name="checkcircleo"
+                  size={20}
+                />,
+                <ForwardRef>
+                  Correct!
+                </ForwardRef>,
+              ],
+              "disabled": true,
+              "onPress": [Function],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "allowFontScaling": false,
+                  "color": "#FFF",
+                  "name": "checkcircleo",
+                  "size": 20,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": "Correct!",
+                },
+                "ref": null,
+                "rendered": "Correct!",
+                "type": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "displayName": "Styled(Component)",
+                  "inlineStyle": InlineStyle {
+                    "rules": Array [
+                      "
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 0 10px;
+  align-self: center;
+",
+                    ],
+                  },
+                  "propTypes": Object {
+                    "accessible": [Function],
+                    "adjustsFontSizeToFit": [Function],
+                    "allowFontScaling": [Function],
+                    "disabled": [Function],
+                    "ellipsizeMode": [Function],
+                    "minimumFontScale": [Function],
+                    "nativeID": [Function],
+                    "numberOfLines": [Function],
+                    "onLayout": [Function],
+                    "onLongPress": [Function],
+                    "onPress": [Function],
+                    "pressRetentionOffset": [Function],
+                    "selectable": [Function],
+                    "selectionColor": [Function],
+                    "style": [Function],
+                    "suppressHighlighting": [Function],
+                    "testID": [Function],
+                    "textBreakStrategy": [Function],
+                  },
+                  "render": [Function],
+                  "styledComponentId": "StyledNativeComponent",
+                  "target": [Function],
+                  "withComponent": [Function],
+                  Symbol(Symbol.hasInstance): [Function],
+                },
+              },
+            ],
+            "type": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "displayName": "Styled(Styled(TouchableOpacity))",
+              "getDefaultProps": [Function],
+              "inlineStyle": InlineStyle {
+                "rules": Array [
+                  "
+  padding: 10px;
+  margin-top: 32px;
+  border-radius: 12px;
+  border-bottom-width: 3px;
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+",
+                  "
+  padding: 20px;
+  flex: 3;
+  background: #7ac70c;
+  border-bottom-color: #95d353;
+  ",
+                  [Function],
+                  "
+",
+                ],
+              },
+              "render": [Function],
+              "styledComponentId": "StyledNativeComponent",
+              "target": [Function],
+              "withComponent": [Function],
+              Symbol(Symbol.hasInstance): [Function],
+            },
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "style": Object {
+                "flex": 1,
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": Array [
+                <Icon
+                  allowFontScaling={false}
+                  color="#FFF"
+                  name="closecircleo"
+                  size={20}
+                />,
+                <ForwardRef>
+                  Wrong!
+                </ForwardRef>,
+              ],
+              "disabled": true,
+              "onPress": [Function],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "allowFontScaling": false,
+                  "color": "#FFF",
+                  "name": "closecircleo",
+                  "size": 20,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": "Wrong!",
+                },
+                "ref": null,
+                "rendered": "Wrong!",
+                "type": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "displayName": "Styled(Component)",
+                  "inlineStyle": InlineStyle {
+                    "rules": Array [
+                      "
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 0 10px;
+  align-self: center;
+",
+                    ],
+                  },
+                  "propTypes": Object {
+                    "accessible": [Function],
+                    "adjustsFontSizeToFit": [Function],
+                    "allowFontScaling": [Function],
+                    "disabled": [Function],
+                    "ellipsizeMode": [Function],
+                    "minimumFontScale": [Function],
+                    "nativeID": [Function],
+                    "numberOfLines": [Function],
+                    "onLayout": [Function],
+                    "onLongPress": [Function],
+                    "onPress": [Function],
+                    "pressRetentionOffset": [Function],
+                    "selectable": [Function],
+                    "selectionColor": [Function],
+                    "style": [Function],
+                    "suppressHighlighting": [Function],
+                    "testID": [Function],
+                    "textBreakStrategy": [Function],
+                  },
+                  "render": [Function],
+                  "styledComponentId": "StyledNativeComponent",
+                  "target": [Function],
+                  "withComponent": [Function],
+                  Symbol(Symbol.hasInstance): [Function],
+                },
+              },
+            ],
+            "type": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "displayName": "Styled(Styled(TouchableOpacity))",
+              "getDefaultProps": [Function],
+              "inlineStyle": InlineStyle {
+                "rules": Array [
+                  "
+  padding: 10px;
+  margin-top: 32px;
+  border-radius: 12px;
+  border-bottom-width: 3px;
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+",
+                  "
+  padding: 20px;
+  flex: 3;
+  background: #e53a3b;
+  border-bottom-color: #ed6565;
+  ",
+                  [Function],
+                  "
+",
+                ],
+              },
+              "render": [Function],
+              "styledComponentId": "StyledNativeComponent",
+              "target": [Function],
+              "withComponent": [Function],
+              Symbol(Symbol.hasInstance): [Function],
+            },
+          },
+        ],
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "displayName": "Styled(Component)",
+          "inlineStyle": InlineStyle {
+            "rules": Array [
+              "
+  flex-direction: row;
+  justify-content: space-between;
+",
+            ],
+          },
+          "render": [Function],
+          "styledComponentId": "StyledNativeComponent",
+          "target": [Function],
+          "withComponent": [Function],
+          Symbol(Symbol.hasInstance): [Function],
+        },
+      },
+    ],
+    "type": [MockFunction],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <ForwardRef>
+            Quiz of "
+            Deck Test
+            "
+          </ForwardRef>,
+          <ForwardRef>
+            Card 
+            <ForwardRef>
+              10
+            </ForwardRef>
+             of
+             
+            <ForwardRef>
+              20
+            </ForwardRef>
+          </ForwardRef>,
+          <ForwardRef>
+            <Component
+              style={
+                Object {
+                  "flex": 1,
+                }
+              }
+            />
+            <ForwardRef>
+              <ForwardRef>
+                Question?
+              </ForwardRef>
+              <ForwardRef
+                onPress={[Function]}
+              >
+                <Icon
+                  allowFontScaling={false}
+                  color="#FFF"
+                  name="sticky-note-o"
+                  size={20}
+                />
+                <ForwardRef>
+                  Show Answer
+                </ForwardRef>
+              </ForwardRef>
+            </ForwardRef>
+            <Component
+              style={
+                Object {
+                  "flex": 1,
+                }
+              }
+            />
+          </ForwardRef>,
+          <ForwardRef>
+            <ForwardRef
+              disabled={true}
+              onPress={[Function]}
+            >
+              <Icon
+                allowFontScaling={false}
+                color="#FFF"
+                name="checkcircleo"
+                size={20}
+              />
+              <ForwardRef>
+                Correct!
+              </ForwardRef>
+            </ForwardRef>
+            <Component
+              style={
+                Object {
+                  "flex": 1,
+                }
+              }
+            />
+            <ForwardRef
+              disabled={true}
+              onPress={[Function]}
+            >
+              <Icon
+                allowFontScaling={false}
+                color="#FFF"
+                name="closecircleo"
+                size={20}
+              />
+              <ForwardRef>
+                Wrong!
+              </ForwardRef>
+            </ForwardRef>
+          </ForwardRef>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              "Quiz of \\"",
+              "Deck Test",
+              "\\"",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Quiz of \\"",
+            "Deck Test",
+            "\\"",
+          ],
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "displayName": "Styled(Component)",
+            "inlineStyle": InlineStyle {
+              "rules": Array [
+                "
+  font-size: 24px;
+  font-weight: bold;
+  color: #1baff6;
+",
+              ],
+            },
+            "propTypes": Object {
+              "accessible": [Function],
+              "adjustsFontSizeToFit": [Function],
+              "allowFontScaling": [Function],
+              "disabled": [Function],
+              "ellipsizeMode": [Function],
+              "minimumFontScale": [Function],
+              "nativeID": [Function],
+              "numberOfLines": [Function],
+              "onLayout": [Function],
+              "onLongPress": [Function],
+              "onPress": [Function],
+              "pressRetentionOffset": [Function],
+              "selectable": [Function],
+              "selectionColor": [Function],
+              "style": [Function],
+              "suppressHighlighting": [Function],
+              "testID": [Function],
+              "textBreakStrategy": [Function],
+            },
+            "render": [Function],
+            "styledComponentId": "StyledNativeComponent",
+            "target": [Function],
+            "withComponent": [Function],
+            Symbol(Symbol.hasInstance): [Function],
+          },
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              "Card ",
+              <ForwardRef>
+                10
+              </ForwardRef>,
+              " of",
+              " ",
+              <ForwardRef>
+                20
+              </ForwardRef>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Card ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": 10,
+              },
+              "ref": null,
+              "rendered": 10,
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "displayName": "Styled(Component)",
+                "inlineStyle": InlineStyle {
+                  "rules": Array [
+                    "
+  font-weight: bold;
+",
+                  ],
+                },
+                "propTypes": Object {
+                  "accessible": [Function],
+                  "adjustsFontSizeToFit": [Function],
+                  "allowFontScaling": [Function],
+                  "disabled": [Function],
+                  "ellipsizeMode": [Function],
+                  "minimumFontScale": [Function],
+                  "nativeID": [Function],
+                  "numberOfLines": [Function],
+                  "onLayout": [Function],
+                  "onLongPress": [Function],
+                  "onPress": [Function],
+                  "pressRetentionOffset": [Function],
+                  "selectable": [Function],
+                  "selectionColor": [Function],
+                  "style": [Function],
+                  "suppressHighlighting": [Function],
+                  "testID": [Function],
+                  "textBreakStrategy": [Function],
+                },
+                "render": [Function],
+                "styledComponentId": "StyledNativeComponent",
+                "target": [Function],
+                "withComponent": [Function],
+                Symbol(Symbol.hasInstance): [Function],
+              },
+            },
+            " of",
+            " ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": 20,
+              },
+              "ref": null,
+              "rendered": 20,
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "displayName": "Styled(Component)",
+                "inlineStyle": InlineStyle {
+                  "rules": Array [
+                    "
+  font-weight: bold;
+",
+                  ],
+                },
+                "propTypes": Object {
+                  "accessible": [Function],
+                  "adjustsFontSizeToFit": [Function],
+                  "allowFontScaling": [Function],
+                  "disabled": [Function],
+                  "ellipsizeMode": [Function],
+                  "minimumFontScale": [Function],
+                  "nativeID": [Function],
+                  "numberOfLines": [Function],
+                  "onLayout": [Function],
+                  "onLongPress": [Function],
+                  "onPress": [Function],
+                  "pressRetentionOffset": [Function],
+                  "selectable": [Function],
+                  "selectionColor": [Function],
+                  "style": [Function],
+                  "suppressHighlighting": [Function],
+                  "testID": [Function],
+                  "textBreakStrategy": [Function],
+                },
+                "render": [Function],
+                "styledComponentId": "StyledNativeComponent",
+                "target": [Function],
+                "withComponent": [Function],
+                Symbol(Symbol.hasInstance): [Function],
+              },
+            },
+          ],
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "displayName": "Styled(Component)",
+            "inlineStyle": InlineStyle {
+              "rules": Array [
+                "
+  font-size: 14px;
+  margin-top: 10px;
+",
+              ],
+            },
+            "propTypes": Object {
+              "accessible": [Function],
+              "adjustsFontSizeToFit": [Function],
+              "allowFontScaling": [Function],
+              "disabled": [Function],
+              "ellipsizeMode": [Function],
+              "minimumFontScale": [Function],
+              "nativeID": [Function],
+              "numberOfLines": [Function],
+              "onLayout": [Function],
+              "onLongPress": [Function],
+              "onPress": [Function],
+              "pressRetentionOffset": [Function],
+              "selectable": [Function],
+              "selectionColor": [Function],
+              "style": [Function],
+              "suppressHighlighting": [Function],
+              "testID": [Function],
+              "textBreakStrategy": [Function],
+            },
+            "render": [Function],
+            "styledComponentId": "StyledNativeComponent",
+            "target": [Function],
+            "withComponent": [Function],
+            Symbol(Symbol.hasInstance): [Function],
+          },
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <Component
+                style={
+                  Object {
+                    "flex": 1,
+                  }
+                }
+              />,
+              <ForwardRef>
+                <ForwardRef>
+                  Question?
+                </ForwardRef>
+                <ForwardRef
+                  onPress={[Function]}
+                >
+                  <Icon
+                    allowFontScaling={false}
+                    color="#FFF"
+                    name="sticky-note-o"
+                    size={20}
+                  />
+                  <ForwardRef>
+                    Show Answer
+                  </ForwardRef>
+                </ForwardRef>
+              </ForwardRef>,
+              <Component
+                style={
+                  Object {
+                    "flex": 1,
+                  }
+                }
+              />,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "style": Object {
+                  "flex": 1,
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": Array [
+                  <ForwardRef>
+                    Question?
+                  </ForwardRef>,
+                  <ForwardRef
+                    onPress={[Function]}
+                  >
+                    <Icon
+                      allowFontScaling={false}
+                      color="#FFF"
+                      name="sticky-note-o"
+                      size={20}
+                    />
+                    <ForwardRef>
+                      Show Answer
+                    </ForwardRef>
+                  </ForwardRef>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": "Question?",
+                  },
+                  "ref": null,
+                  "rendered": "Question?",
+                  "type": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "displayName": "Styled(Component)",
+                    "inlineStyle": InlineStyle {
+                      "rules": Array [
+                        "
+  margin-bottom: 30px;
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+",
+                      ],
+                    },
+                    "propTypes": Object {
+                      "accessible": [Function],
+                      "adjustsFontSizeToFit": [Function],
+                      "allowFontScaling": [Function],
+                      "disabled": [Function],
+                      "ellipsizeMode": [Function],
+                      "minimumFontScale": [Function],
+                      "nativeID": [Function],
+                      "numberOfLines": [Function],
+                      "onLayout": [Function],
+                      "onLongPress": [Function],
+                      "onPress": [Function],
+                      "pressRetentionOffset": [Function],
+                      "selectable": [Function],
+                      "selectionColor": [Function],
+                      "style": [Function],
+                      "suppressHighlighting": [Function],
+                      "testID": [Function],
+                      "textBreakStrategy": [Function],
+                    },
+                    "render": [Function],
+                    "styledComponentId": "StyledNativeComponent",
+                    "target": [Function],
+                    "withComponent": [Function],
+                    Symbol(Symbol.hasInstance): [Function],
+                  },
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": Array [
+                      <Icon
+                        allowFontScaling={false}
+                        color="#FFF"
+                        name="sticky-note-o"
+                        size={20}
+                      />,
+                      <ForwardRef>
+                        Show Answer
+                      </ForwardRef>,
+                    ],
+                    "onPress": [Function],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "allowFontScaling": false,
+                        "color": "#FFF",
+                        "name": "sticky-note-o",
+                        "size": 20,
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "children": "Show Answer",
+                      },
+                      "ref": null,
+                      "rendered": "Show Answer",
+                      "type": Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "displayName": "Styled(Component)",
+                        "inlineStyle": InlineStyle {
+                          "rules": Array [
+                            "
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 0 10px;
+  align-self: center;
+",
+                          ],
+                        },
+                        "propTypes": Object {
+                          "accessible": [Function],
+                          "adjustsFontSizeToFit": [Function],
+                          "allowFontScaling": [Function],
+                          "disabled": [Function],
+                          "ellipsizeMode": [Function],
+                          "minimumFontScale": [Function],
+                          "nativeID": [Function],
+                          "numberOfLines": [Function],
+                          "onLayout": [Function],
+                          "onLongPress": [Function],
+                          "onPress": [Function],
+                          "pressRetentionOffset": [Function],
+                          "selectable": [Function],
+                          "selectionColor": [Function],
+                          "style": [Function],
+                          "suppressHighlighting": [Function],
+                          "testID": [Function],
+                          "textBreakStrategy": [Function],
+                        },
+                        "render": [Function],
+                        "styledComponentId": "StyledNativeComponent",
+                        "target": [Function],
+                        "withComponent": [Function],
+                        Symbol(Symbol.hasInstance): [Function],
+                      },
+                    },
+                  ],
+                  "type": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "displayName": "Styled(Styled(TouchableOpacity))",
+                    "getDefaultProps": [Function],
+                    "inlineStyle": InlineStyle {
+                      "rules": Array [
+                        "
+  padding: 10px;
+  margin-top: 32px;
+  border-radius: 12px;
+  border-bottom-width: 3px;
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+",
+                        "
+  background: #a560e7;
+  border-bottom-color: #b881ec;
+",
+                      ],
+                    },
+                    "render": [Function],
+                    "styledComponentId": "StyledNativeComponent",
+                    "target": [Function],
+                    "withComponent": [Function],
+                    Symbol(Symbol.hasInstance): [Function],
+                  },
+                },
+              ],
+              "type": [MockFunction],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "style": Object {
+                  "flex": 1,
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "displayName": "Styled(Component)",
+            "inlineStyle": InlineStyle {
+              "rules": Array [
+                "
+  flex-direction: row;
+  padding: 60px 10px;
+  justify-content: center;
+",
+              ],
+            },
+            "render": [Function],
+            "styledComponentId": "StyledNativeComponent",
+            "target": [Function],
+            "withComponent": [Function],
+            Symbol(Symbol.hasInstance): [Function],
+          },
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <ForwardRef
+                disabled={true}
+                onPress={[Function]}
+              >
+                <Icon
+                  allowFontScaling={false}
+                  color="#FFF"
+                  name="checkcircleo"
+                  size={20}
+                />
+                <ForwardRef>
+                  Correct!
+                </ForwardRef>
+              </ForwardRef>,
+              <Component
+                style={
+                  Object {
+                    "flex": 1,
+                  }
+                }
+              />,
+              <ForwardRef
+                disabled={true}
+                onPress={[Function]}
+              >
+                <Icon
+                  allowFontScaling={false}
+                  color="#FFF"
+                  name="closecircleo"
+                  size={20}
+                />
+                <ForwardRef>
+                  Wrong!
+                </ForwardRef>
+              </ForwardRef>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": Array [
+                  <Icon
+                    allowFontScaling={false}
+                    color="#FFF"
+                    name="checkcircleo"
+                    size={20}
+                  />,
+                  <ForwardRef>
+                    Correct!
+                  </ForwardRef>,
+                ],
+                "disabled": true,
+                "onPress": [Function],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "allowFontScaling": false,
+                    "color": "#FFF",
+                    "name": "checkcircleo",
+                    "size": 20,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": "Correct!",
+                  },
+                  "ref": null,
+                  "rendered": "Correct!",
+                  "type": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "displayName": "Styled(Component)",
+                    "inlineStyle": InlineStyle {
+                      "rules": Array [
+                        "
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 0 10px;
+  align-self: center;
+",
+                      ],
+                    },
+                    "propTypes": Object {
+                      "accessible": [Function],
+                      "adjustsFontSizeToFit": [Function],
+                      "allowFontScaling": [Function],
+                      "disabled": [Function],
+                      "ellipsizeMode": [Function],
+                      "minimumFontScale": [Function],
+                      "nativeID": [Function],
+                      "numberOfLines": [Function],
+                      "onLayout": [Function],
+                      "onLongPress": [Function],
+                      "onPress": [Function],
+                      "pressRetentionOffset": [Function],
+                      "selectable": [Function],
+                      "selectionColor": [Function],
+                      "style": [Function],
+                      "suppressHighlighting": [Function],
+                      "testID": [Function],
+                      "textBreakStrategy": [Function],
+                    },
+                    "render": [Function],
+                    "styledComponentId": "StyledNativeComponent",
+                    "target": [Function],
+                    "withComponent": [Function],
+                    Symbol(Symbol.hasInstance): [Function],
+                  },
+                },
+              ],
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "displayName": "Styled(Styled(TouchableOpacity))",
+                "getDefaultProps": [Function],
+                "inlineStyle": InlineStyle {
+                  "rules": Array [
+                    "
+  padding: 10px;
+  margin-top: 32px;
+  border-radius: 12px;
+  border-bottom-width: 3px;
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+",
+                    "
+  padding: 20px;
+  flex: 3;
+  background: #7ac70c;
+  border-bottom-color: #95d353;
+  ",
+                    [Function],
+                    "
+",
+                  ],
+                },
+                "render": [Function],
+                "styledComponentId": "StyledNativeComponent",
+                "target": [Function],
+                "withComponent": [Function],
+                Symbol(Symbol.hasInstance): [Function],
+              },
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "style": Object {
+                  "flex": 1,
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": Array [
+                  <Icon
+                    allowFontScaling={false}
+                    color="#FFF"
+                    name="closecircleo"
+                    size={20}
+                  />,
+                  <ForwardRef>
+                    Wrong!
+                  </ForwardRef>,
+                ],
+                "disabled": true,
+                "onPress": [Function],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "allowFontScaling": false,
+                    "color": "#FFF",
+                    "name": "closecircleo",
+                    "size": 20,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": "Wrong!",
+                  },
+                  "ref": null,
+                  "rendered": "Wrong!",
+                  "type": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "displayName": "Styled(Component)",
+                    "inlineStyle": InlineStyle {
+                      "rules": Array [
+                        "
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 0 10px;
+  align-self: center;
+",
+                      ],
+                    },
+                    "propTypes": Object {
+                      "accessible": [Function],
+                      "adjustsFontSizeToFit": [Function],
+                      "allowFontScaling": [Function],
+                      "disabled": [Function],
+                      "ellipsizeMode": [Function],
+                      "minimumFontScale": [Function],
+                      "nativeID": [Function],
+                      "numberOfLines": [Function],
+                      "onLayout": [Function],
+                      "onLongPress": [Function],
+                      "onPress": [Function],
+                      "pressRetentionOffset": [Function],
+                      "selectable": [Function],
+                      "selectionColor": [Function],
+                      "style": [Function],
+                      "suppressHighlighting": [Function],
+                      "testID": [Function],
+                      "textBreakStrategy": [Function],
+                    },
+                    "render": [Function],
+                    "styledComponentId": "StyledNativeComponent",
+                    "target": [Function],
+                    "withComponent": [Function],
+                    Symbol(Symbol.hasInstance): [Function],
+                  },
+                },
+              ],
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "displayName": "Styled(Styled(TouchableOpacity))",
+                "getDefaultProps": [Function],
+                "inlineStyle": InlineStyle {
+                  "rules": Array [
+                    "
+  padding: 10px;
+  margin-top: 32px;
+  border-radius: 12px;
+  border-bottom-width: 3px;
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+",
+                    "
+  padding: 20px;
+  flex: 3;
+  background: #e53a3b;
+  border-bottom-color: #ed6565;
+  ",
+                    [Function],
+                    "
+",
+                  ],
+                },
+                "render": [Function],
+                "styledComponentId": "StyledNativeComponent",
+                "target": [Function],
+                "withComponent": [Function],
+                Symbol(Symbol.hasInstance): [Function],
+              },
+            },
+          ],
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "displayName": "Styled(Component)",
+            "inlineStyle": InlineStyle {
+              "rules": Array [
+                "
+  flex-direction: row;
+  justify-content: space-between;
+",
+              ],
+            },
+            "render": [Function],
+            "styledComponentId": "StyledNativeComponent",
+            "target": [Function],
+            "withComponent": [Function],
+            Symbol(Symbol.hasInstance): [Function],
+          },
+        },
+      ],
+      "type": [MockFunction],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": false,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;
