@@ -4,6 +4,7 @@ import styled from "styled-components/native";
 import DeckDisplay from "./DeckDisplay";
 
 const Item = styled.TouchableOpacity`
+  padding: 10px;
   border-bottom-width: 1px;
   border-bottom-color: #ccc;
   min-height: 130px;

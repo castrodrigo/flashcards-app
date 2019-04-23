@@ -4,7 +4,6 @@ import styled from "styled-components/native";
 import Deck from "./Deck";
 
 const Item = styled.View`
-  padding: 10px;
   flex-direction: row;
   flex: 1;
 `;
