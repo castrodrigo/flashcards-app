@@ -1,6 +1,6 @@
 import "react-native";
 import React from "react";
-import App from "../App";
+import App from "./App";
 import { shallow } from "enzyme";
 import NavigationTestUtils from "react-navigation/NavigationTestUtils";
 

@@ -4,7 +4,6 @@ import styled from "styled-components/native";
 import Deck from "./Deck";
 
 const Item = styled.View`
-  padding: 10px;
   flex-direction: row;
   flex: 1;
 `;
@@ -31,7 +30,7 @@ const TotalCards = styled.Text`
   font-size: 14px;
 `;
 
-const HighLight = styled.Text`
+const Highlight = styled.Text`
   font-weight: bold;
 `;
 
@@ -42,7 +41,7 @@ const DeckDisplay = ({ name, description, cardsCount }) => (
       <Title>{name}</Title>
       <Description>{description}</Description>
       <TotalCards>
-        Cards: <HighLight>{cardsCount}</HighLight>
+        Cards: <Highlight>{cardsCount}</Highlight>
       </TotalCards>
     </TextWrapper>
   </Item>

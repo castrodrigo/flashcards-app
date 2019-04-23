@@ -1,37 +1,26 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { View } from "react-native";
 import styled from "styled-components/native";
 import { FontAwesome, AntDesign } from "@expo/vector-icons";
-
-const Container = styled.ScrollView`
-  flex: 1;
-  padding: 16px;
-`;
-
-const Title = styled.Text`
-  font-size: 24px;
-  font-weight: bold;
-  color: #1baff6;
-`;
+import Container from "../components/Layout/Container";
+import Highlight from "../components/Layout/Highlight";
+import Title from "../components/Layout/Title";
+import Button, { ButtonLabel } from "../components/Layout/Button";
 
 const TotalCards = styled.Text`
   font-size: 14px;
   margin-top: 10px;
 `;
 
-const HighLight = styled.Text`
-  font-weight: bold;
-`;
-
 const CardContainer = styled.View`
-  flex: 1;
   flex-direction: row;
   padding: 60px 10px;
   justify-content: center;
 `;
 
 const Card = styled.ScrollView`
-  width: 200px;
+  flex: 4;
   height: 300px;
   background-color: #ffc802;
   border-radius: 16px;
@@ -54,25 +43,6 @@ const CardAnswer = styled.Text`
   font-weight: bold;
   letter-spacing: 1px;
   color: #1baff6;
-`;
-
-const ButtonLabel = styled.Text`
-  font-size: 16px;
-  font-weight: bold;
-  text-align: center;
-  text-transform: uppercase;
-  color: #fff;
-  padding: 0 10px;
-  align-self: center;
-`;
-
-const Button = styled.TouchableOpacity`
-  padding: 10px;
-  border-radius: 12px;
-  border-bottom-width: 3px;
-  flex: 1;
-  flex-direction: row;
-  justify-content: center;
 `;
 
 const ShowAnswer = styled(Button)`
@@ -118,19 +88,26 @@ export default class QuizScreen extends React.Component {
   };
 
   render() {
+    const {
+      deckName,
+      current,
+      total,
+      card: { question, answer }
+    } = this.props;
+
     return (
       <Container>
-        <Title>Quiz of "{this.props.deckName}"</Title>
+        <Title>Quiz of "{deckName}"</Title>
         <TotalCards>
-          Card <HighLight>{this.props.current}</HighLight> of{" "}
-          <HighLight>{this.props.total}</HighLight>
+          Card <Highlight>{current}</Highlight> of{" "}
+          <Highlight>{total}</Highlight>
         </TotalCards>
         <CardContainer>
           <View style={{ flex: 1 }} />
           <Card>
-            <CardQuestion>{this.props.card.question}</CardQuestion>
+            <CardQuestion>{question}</CardQuestion>
             {this.state.showAnswer ? (
-              <CardAnswer>{this.props.card.answer}</CardAnswer>
+              <CardAnswer>{answer}</CardAnswer>
             ) : (
               <ShowAnswer onPress={this.handleShowAnswer}>
                 <FontAwesome name={"sticky-note-o"} size={20} color="#FFF" />
@@ -161,3 +138,13 @@ export default class QuizScreen extends React.Component {
     );
   }
 }
+
+QuizScreen.propTypes = {
+  deckName: PropTypes.string.isRequired,
+  current: PropTypes.number.isRequired,
+  total: PropTypes.number.isRequired,
+  card: PropTypes.shape({
+    question: PropTypes.string.isRequired,
+    answer: PropTypes.string.isRequired
+  })
+};
