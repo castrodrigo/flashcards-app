@@ -1,4 +1,4 @@
-import * as api from "../api";
+import * as api from "../api/data";
 import { getCards } from "./cards";
 import { getDecks } from "./decks";
 

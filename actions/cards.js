@@ -1,4 +1,4 @@
-import * as api from "../api";
+import * as api from "../api/data";
 const uuidv1 = require("uuid/v1");
 
 export const GET_CARDS = "GET_CARDS";
