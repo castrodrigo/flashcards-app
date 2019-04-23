@@ -1,0 +1,1302 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render DeckScreen should render successfully 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <DeckScreen
+    cardsMap={
+      Array [
+        "1",
+        "2",
+      ]
+    }
+    deck={
+      Object {
+        "id": "123",
+        "name": "Deck Test",
+      }
+    }
+    navigation={
+      Object {
+        "navigate": [MockFunction],
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        <DeckDisplay
+          cardsCount={2}
+          id="123"
+          name="Deck Test"
+        />,
+        <ForwardRef
+          disabled={false}
+          onPress={[Function]}
+        >
+          <Icon
+            allowFontScaling={false}
+            color="#FFF"
+            name="question-circle-o"
+            size={20}
+          />
+          <ForwardRef>
+            Start Quiz
+          </ForwardRef>
+        </ForwardRef>,
+        <ForwardRef
+          onPress={[Function]}
+        >
+          <Icon
+            allowFontScaling={false}
+            color="#FFF"
+            name="library-add"
+            size={20}
+          />
+          <ForwardRef>
+            Add a New Card
+          </ForwardRef>
+        </ForwardRef>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "cardsCount": 2,
+          "id": "123",
+          "name": "Deck Test",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <Icon
+              allowFontScaling={false}
+              color="#FFF"
+              name="question-circle-o"
+              size={20}
+            />,
+            <ForwardRef>
+              Start Quiz
+            </ForwardRef>,
+          ],
+          "disabled": false,
+          "onPress": [Function],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "allowFontScaling": false,
+              "color": "#FFF",
+              "name": "question-circle-o",
+              "size": 20,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": "Start Quiz",
+            },
+            "ref": null,
+            "rendered": "Start Quiz",
+            "type": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "displayName": "Styled(Component)",
+              "inlineStyle": InlineStyle {
+                "rules": Array [
+                  "
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 0 10px;
+  align-self: center;
+",
+                ],
+              },
+              "propTypes": Object {
+                "accessible": [Function],
+                "adjustsFontSizeToFit": [Function],
+                "allowFontScaling": [Function],
+                "disabled": [Function],
+                "ellipsizeMode": [Function],
+                "minimumFontScale": [Function],
+                "nativeID": [Function],
+                "numberOfLines": [Function],
+                "onLayout": [Function],
+                "onLongPress": [Function],
+                "onPress": [Function],
+                "pressRetentionOffset": [Function],
+                "selectable": [Function],
+                "selectionColor": [Function],
+                "style": [Function],
+                "suppressHighlighting": [Function],
+                "testID": [Function],
+                "textBreakStrategy": [Function],
+              },
+              "render": [Function],
+              "styledComponentId": "StyledNativeComponent",
+              "target": [Function],
+              "withComponent": [Function],
+              Symbol(Symbol.hasInstance): [Function],
+            },
+          },
+        ],
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "displayName": "Styled(Styled(TouchableOpacity))",
+          "getDefaultProps": [Function],
+          "inlineStyle": InlineStyle {
+            "rules": Array [
+              "
+  padding: 10px;
+  margin-top: 32px;
+  border-radius: 12px;
+  border-bottom-width: 3px;
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+",
+              "
+  background: #a560e7;
+  border-bottom-color: #b881ec;
+  ",
+              [Function],
+              "
+",
+            ],
+          },
+          "render": [Function],
+          "styledComponentId": "StyledNativeComponent",
+          "target": [Function],
+          "withComponent": [Function],
+          Symbol(Symbol.hasInstance): [Function],
+        },
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <Icon
+              allowFontScaling={false}
+              color="#FFF"
+              name="library-add"
+              size={20}
+            />,
+            <ForwardRef>
+              Add a New Card
+            </ForwardRef>,
+          ],
+          "onPress": [Function],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "allowFontScaling": false,
+              "color": "#FFF",
+              "name": "library-add",
+              "size": 20,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": "Add a New Card",
+            },
+            "ref": null,
+            "rendered": "Add a New Card",
+            "type": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "displayName": "Styled(Component)",
+              "inlineStyle": InlineStyle {
+                "rules": Array [
+                  "
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 0 10px;
+  align-self: center;
+",
+                ],
+              },
+              "propTypes": Object {
+                "accessible": [Function],
+                "adjustsFontSizeToFit": [Function],
+                "allowFontScaling": [Function],
+                "disabled": [Function],
+                "ellipsizeMode": [Function],
+                "minimumFontScale": [Function],
+                "nativeID": [Function],
+                "numberOfLines": [Function],
+                "onLayout": [Function],
+                "onLongPress": [Function],
+                "onPress": [Function],
+                "pressRetentionOffset": [Function],
+                "selectable": [Function],
+                "selectionColor": [Function],
+                "style": [Function],
+                "suppressHighlighting": [Function],
+                "testID": [Function],
+                "textBreakStrategy": [Function],
+              },
+              "render": [Function],
+              "styledComponentId": "StyledNativeComponent",
+              "target": [Function],
+              "withComponent": [Function],
+              Symbol(Symbol.hasInstance): [Function],
+            },
+          },
+        ],
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "displayName": "Styled(Styled(TouchableOpacity))",
+          "getDefaultProps": [Function],
+          "inlineStyle": InlineStyle {
+            "rules": Array [
+              "
+  padding: 10px;
+  margin-top: 32px;
+  border-radius: 12px;
+  border-bottom-width: 3px;
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+",
+              "
+  background: #e53a3b;
+  border-bottom-color: #ed6565;
+",
+            ],
+          },
+          "render": [Function],
+          "styledComponentId": "StyledNativeComponent",
+          "target": [Function],
+          "withComponent": [Function],
+          Symbol(Symbol.hasInstance): [Function],
+        },
+      },
+    ],
+    "type": [MockFunction],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <DeckDisplay
+            cardsCount={2}
+            id="123"
+            name="Deck Test"
+          />,
+          <ForwardRef
+            disabled={false}
+            onPress={[Function]}
+          >
+            <Icon
+              allowFontScaling={false}
+              color="#FFF"
+              name="question-circle-o"
+              size={20}
+            />
+            <ForwardRef>
+              Start Quiz
+            </ForwardRef>
+          </ForwardRef>,
+          <ForwardRef
+            onPress={[Function]}
+          >
+            <Icon
+              allowFontScaling={false}
+              color="#FFF"
+              name="library-add"
+              size={20}
+            />
+            <ForwardRef>
+              Add a New Card
+            </ForwardRef>
+          </ForwardRef>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "cardsCount": 2,
+            "id": "123",
+            "name": "Deck Test",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <Icon
+                allowFontScaling={false}
+                color="#FFF"
+                name="question-circle-o"
+                size={20}
+              />,
+              <ForwardRef>
+                Start Quiz
+              </ForwardRef>,
+            ],
+            "disabled": false,
+            "onPress": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "allowFontScaling": false,
+                "color": "#FFF",
+                "name": "question-circle-o",
+                "size": 20,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "Start Quiz",
+              },
+              "ref": null,
+              "rendered": "Start Quiz",
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "displayName": "Styled(Component)",
+                "inlineStyle": InlineStyle {
+                  "rules": Array [
+                    "
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 0 10px;
+  align-self: center;
+",
+                  ],
+                },
+                "propTypes": Object {
+                  "accessible": [Function],
+                  "adjustsFontSizeToFit": [Function],
+                  "allowFontScaling": [Function],
+                  "disabled": [Function],
+                  "ellipsizeMode": [Function],
+                  "minimumFontScale": [Function],
+                  "nativeID": [Function],
+                  "numberOfLines": [Function],
+                  "onLayout": [Function],
+                  "onLongPress": [Function],
+                  "onPress": [Function],
+                  "pressRetentionOffset": [Function],
+                  "selectable": [Function],
+                  "selectionColor": [Function],
+                  "style": [Function],
+                  "suppressHighlighting": [Function],
+                  "testID": [Function],
+                  "textBreakStrategy": [Function],
+                },
+                "render": [Function],
+                "styledComponentId": "StyledNativeComponent",
+                "target": [Function],
+                "withComponent": [Function],
+                Symbol(Symbol.hasInstance): [Function],
+              },
+            },
+          ],
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "displayName": "Styled(Styled(TouchableOpacity))",
+            "getDefaultProps": [Function],
+            "inlineStyle": InlineStyle {
+              "rules": Array [
+                "
+  padding: 10px;
+  margin-top: 32px;
+  border-radius: 12px;
+  border-bottom-width: 3px;
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+",
+                "
+  background: #a560e7;
+  border-bottom-color: #b881ec;
+  ",
+                [Function],
+                "
+",
+              ],
+            },
+            "render": [Function],
+            "styledComponentId": "StyledNativeComponent",
+            "target": [Function],
+            "withComponent": [Function],
+            Symbol(Symbol.hasInstance): [Function],
+          },
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <Icon
+                allowFontScaling={false}
+                color="#FFF"
+                name="library-add"
+                size={20}
+              />,
+              <ForwardRef>
+                Add a New Card
+              </ForwardRef>,
+            ],
+            "onPress": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "allowFontScaling": false,
+                "color": "#FFF",
+                "name": "library-add",
+                "size": 20,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "Add a New Card",
+              },
+              "ref": null,
+              "rendered": "Add a New Card",
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "displayName": "Styled(Component)",
+                "inlineStyle": InlineStyle {
+                  "rules": Array [
+                    "
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 0 10px;
+  align-self: center;
+",
+                  ],
+                },
+                "propTypes": Object {
+                  "accessible": [Function],
+                  "adjustsFontSizeToFit": [Function],
+                  "allowFontScaling": [Function],
+                  "disabled": [Function],
+                  "ellipsizeMode": [Function],
+                  "minimumFontScale": [Function],
+                  "nativeID": [Function],
+                  "numberOfLines": [Function],
+                  "onLayout": [Function],
+                  "onLongPress": [Function],
+                  "onPress": [Function],
+                  "pressRetentionOffset": [Function],
+                  "selectable": [Function],
+                  "selectionColor": [Function],
+                  "style": [Function],
+                  "suppressHighlighting": [Function],
+                  "testID": [Function],
+                  "textBreakStrategy": [Function],
+                },
+                "render": [Function],
+                "styledComponentId": "StyledNativeComponent",
+                "target": [Function],
+                "withComponent": [Function],
+                Symbol(Symbol.hasInstance): [Function],
+              },
+            },
+          ],
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "displayName": "Styled(Styled(TouchableOpacity))",
+            "getDefaultProps": [Function],
+            "inlineStyle": InlineStyle {
+              "rules": Array [
+                "
+  padding: 10px;
+  margin-top: 32px;
+  border-radius: 12px;
+  border-bottom-width: 3px;
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+",
+                "
+  background: #e53a3b;
+  border-bottom-color: #ed6565;
+",
+              ],
+            },
+            "render": [Function],
+            "styledComponentId": "StyledNativeComponent",
+            "target": [Function],
+            "withComponent": [Function],
+            Symbol(Symbol.hasInstance): [Function],
+          },
+        },
+      ],
+      "type": [MockFunction],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": false,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;
+
+exports[`Render DeckScreen should render successfully without cards 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <DeckScreen
+    cardsMap={Array []}
+    deck={
+      Object {
+        "id": "123",
+        "name": "Deck Test",
+      }
+    }
+    navigation={
+      Object {
+        "navigate": [MockFunction],
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        <DeckDisplay
+          cardsCount={0}
+          id="123"
+          name="Deck Test"
+        />,
+        <ForwardRef
+          disabled={true}
+          onPress={[Function]}
+        >
+          <Icon
+            allowFontScaling={false}
+            color="#FFF"
+            name="question-circle-o"
+            size={20}
+          />
+          <ForwardRef>
+            Start Quiz
+          </ForwardRef>
+        </ForwardRef>,
+        <ForwardRef
+          onPress={[Function]}
+        >
+          <Icon
+            allowFontScaling={false}
+            color="#FFF"
+            name="library-add"
+            size={20}
+          />
+          <ForwardRef>
+            Add a New Card
+          </ForwardRef>
+        </ForwardRef>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "cardsCount": 0,
+          "id": "123",
+          "name": "Deck Test",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <Icon
+              allowFontScaling={false}
+              color="#FFF"
+              name="question-circle-o"
+              size={20}
+            />,
+            <ForwardRef>
+              Start Quiz
+            </ForwardRef>,
+          ],
+          "disabled": true,
+          "onPress": [Function],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "allowFontScaling": false,
+              "color": "#FFF",
+              "name": "question-circle-o",
+              "size": 20,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": "Start Quiz",
+            },
+            "ref": null,
+            "rendered": "Start Quiz",
+            "type": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "displayName": "Styled(Component)",
+              "inlineStyle": InlineStyle {
+                "rules": Array [
+                  "
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 0 10px;
+  align-self: center;
+",
+                ],
+              },
+              "propTypes": Object {
+                "accessible": [Function],
+                "adjustsFontSizeToFit": [Function],
+                "allowFontScaling": [Function],
+                "disabled": [Function],
+                "ellipsizeMode": [Function],
+                "minimumFontScale": [Function],
+                "nativeID": [Function],
+                "numberOfLines": [Function],
+                "onLayout": [Function],
+                "onLongPress": [Function],
+                "onPress": [Function],
+                "pressRetentionOffset": [Function],
+                "selectable": [Function],
+                "selectionColor": [Function],
+                "style": [Function],
+                "suppressHighlighting": [Function],
+                "testID": [Function],
+                "textBreakStrategy": [Function],
+              },
+              "render": [Function],
+              "styledComponentId": "StyledNativeComponent",
+              "target": [Function],
+              "withComponent": [Function],
+              Symbol(Symbol.hasInstance): [Function],
+            },
+          },
+        ],
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "displayName": "Styled(Styled(TouchableOpacity))",
+          "getDefaultProps": [Function],
+          "inlineStyle": InlineStyle {
+            "rules": Array [
+              "
+  padding: 10px;
+  margin-top: 32px;
+  border-radius: 12px;
+  border-bottom-width: 3px;
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+",
+              "
+  background: #a560e7;
+  border-bottom-color: #b881ec;
+  ",
+              [Function],
+              "
+",
+            ],
+          },
+          "render": [Function],
+          "styledComponentId": "StyledNativeComponent",
+          "target": [Function],
+          "withComponent": [Function],
+          Symbol(Symbol.hasInstance): [Function],
+        },
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <Icon
+              allowFontScaling={false}
+              color="#FFF"
+              name="library-add"
+              size={20}
+            />,
+            <ForwardRef>
+              Add a New Card
+            </ForwardRef>,
+          ],
+          "onPress": [Function],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "allowFontScaling": false,
+              "color": "#FFF",
+              "name": "library-add",
+              "size": 20,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": "Add a New Card",
+            },
+            "ref": null,
+            "rendered": "Add a New Card",
+            "type": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "displayName": "Styled(Component)",
+              "inlineStyle": InlineStyle {
+                "rules": Array [
+                  "
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 0 10px;
+  align-self: center;
+",
+                ],
+              },
+              "propTypes": Object {
+                "accessible": [Function],
+                "adjustsFontSizeToFit": [Function],
+                "allowFontScaling": [Function],
+                "disabled": [Function],
+                "ellipsizeMode": [Function],
+                "minimumFontScale": [Function],
+                "nativeID": [Function],
+                "numberOfLines": [Function],
+                "onLayout": [Function],
+                "onLongPress": [Function],
+                "onPress": [Function],
+                "pressRetentionOffset": [Function],
+                "selectable": [Function],
+                "selectionColor": [Function],
+                "style": [Function],
+                "suppressHighlighting": [Function],
+                "testID": [Function],
+                "textBreakStrategy": [Function],
+              },
+              "render": [Function],
+              "styledComponentId": "StyledNativeComponent",
+              "target": [Function],
+              "withComponent": [Function],
+              Symbol(Symbol.hasInstance): [Function],
+            },
+          },
+        ],
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "displayName": "Styled(Styled(TouchableOpacity))",
+          "getDefaultProps": [Function],
+          "inlineStyle": InlineStyle {
+            "rules": Array [
+              "
+  padding: 10px;
+  margin-top: 32px;
+  border-radius: 12px;
+  border-bottom-width: 3px;
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+",
+              "
+  background: #e53a3b;
+  border-bottom-color: #ed6565;
+",
+            ],
+          },
+          "render": [Function],
+          "styledComponentId": "StyledNativeComponent",
+          "target": [Function],
+          "withComponent": [Function],
+          Symbol(Symbol.hasInstance): [Function],
+        },
+      },
+    ],
+    "type": [MockFunction],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <DeckDisplay
+            cardsCount={0}
+            id="123"
+            name="Deck Test"
+          />,
+          <ForwardRef
+            disabled={true}
+            onPress={[Function]}
+          >
+            <Icon
+              allowFontScaling={false}
+              color="#FFF"
+              name="question-circle-o"
+              size={20}
+            />
+            <ForwardRef>
+              Start Quiz
+            </ForwardRef>
+          </ForwardRef>,
+          <ForwardRef
+            onPress={[Function]}
+          >
+            <Icon
+              allowFontScaling={false}
+              color="#FFF"
+              name="library-add"
+              size={20}
+            />
+            <ForwardRef>
+              Add a New Card
+            </ForwardRef>
+          </ForwardRef>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "cardsCount": 0,
+            "id": "123",
+            "name": "Deck Test",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <Icon
+                allowFontScaling={false}
+                color="#FFF"
+                name="question-circle-o"
+                size={20}
+              />,
+              <ForwardRef>
+                Start Quiz
+              </ForwardRef>,
+            ],
+            "disabled": true,
+            "onPress": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "allowFontScaling": false,
+                "color": "#FFF",
+                "name": "question-circle-o",
+                "size": 20,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "Start Quiz",
+              },
+              "ref": null,
+              "rendered": "Start Quiz",
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "displayName": "Styled(Component)",
+                "inlineStyle": InlineStyle {
+                  "rules": Array [
+                    "
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 0 10px;
+  align-self: center;
+",
+                  ],
+                },
+                "propTypes": Object {
+                  "accessible": [Function],
+                  "adjustsFontSizeToFit": [Function],
+                  "allowFontScaling": [Function],
+                  "disabled": [Function],
+                  "ellipsizeMode": [Function],
+                  "minimumFontScale": [Function],
+                  "nativeID": [Function],
+                  "numberOfLines": [Function],
+                  "onLayout": [Function],
+                  "onLongPress": [Function],
+                  "onPress": [Function],
+                  "pressRetentionOffset": [Function],
+                  "selectable": [Function],
+                  "selectionColor": [Function],
+                  "style": [Function],
+                  "suppressHighlighting": [Function],
+                  "testID": [Function],
+                  "textBreakStrategy": [Function],
+                },
+                "render": [Function],
+                "styledComponentId": "StyledNativeComponent",
+                "target": [Function],
+                "withComponent": [Function],
+                Symbol(Symbol.hasInstance): [Function],
+              },
+            },
+          ],
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "displayName": "Styled(Styled(TouchableOpacity))",
+            "getDefaultProps": [Function],
+            "inlineStyle": InlineStyle {
+              "rules": Array [
+                "
+  padding: 10px;
+  margin-top: 32px;
+  border-radius: 12px;
+  border-bottom-width: 3px;
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+",
+                "
+  background: #a560e7;
+  border-bottom-color: #b881ec;
+  ",
+                [Function],
+                "
+",
+              ],
+            },
+            "render": [Function],
+            "styledComponentId": "StyledNativeComponent",
+            "target": [Function],
+            "withComponent": [Function],
+            Symbol(Symbol.hasInstance): [Function],
+          },
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <Icon
+                allowFontScaling={false}
+                color="#FFF"
+                name="library-add"
+                size={20}
+              />,
+              <ForwardRef>
+                Add a New Card
+              </ForwardRef>,
+            ],
+            "onPress": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "allowFontScaling": false,
+                "color": "#FFF",
+                "name": "library-add",
+                "size": 20,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "Add a New Card",
+              },
+              "ref": null,
+              "rendered": "Add a New Card",
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "displayName": "Styled(Component)",
+                "inlineStyle": InlineStyle {
+                  "rules": Array [
+                    "
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 0 10px;
+  align-self: center;
+",
+                  ],
+                },
+                "propTypes": Object {
+                  "accessible": [Function],
+                  "adjustsFontSizeToFit": [Function],
+                  "allowFontScaling": [Function],
+                  "disabled": [Function],
+                  "ellipsizeMode": [Function],
+                  "minimumFontScale": [Function],
+                  "nativeID": [Function],
+                  "numberOfLines": [Function],
+                  "onLayout": [Function],
+                  "onLongPress": [Function],
+                  "onPress": [Function],
+                  "pressRetentionOffset": [Function],
+                  "selectable": [Function],
+                  "selectionColor": [Function],
+                  "style": [Function],
+                  "suppressHighlighting": [Function],
+                  "testID": [Function],
+                  "textBreakStrategy": [Function],
+                },
+                "render": [Function],
+                "styledComponentId": "StyledNativeComponent",
+                "target": [Function],
+                "withComponent": [Function],
+                Symbol(Symbol.hasInstance): [Function],
+              },
+            },
+          ],
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "displayName": "Styled(Styled(TouchableOpacity))",
+            "getDefaultProps": [Function],
+            "inlineStyle": InlineStyle {
+              "rules": Array [
+                "
+  padding: 10px;
+  margin-top: 32px;
+  border-radius: 12px;
+  border-bottom-width: 3px;
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+",
+                "
+  background: #e53a3b;
+  border-bottom-color: #ed6565;
+",
+              ],
+            },
+            "render": [Function],
+            "styledComponentId": "StyledNativeComponent",
+            "target": [Function],
+            "withComponent": [Function],
+            Symbol(Symbol.hasInstance): [Function],
+          },
+        },
+      ],
+      "type": [MockFunction],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": false,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;
