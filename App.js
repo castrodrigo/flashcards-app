@@ -6,12 +6,17 @@ import thunk from "redux-thunk";
 import { AppLoading, Asset, Font, Icon } from "expo";
 import AppNavigator from "./navigation/AppNavigator";
 import { composeWithDevTools } from "redux-devtools-extension";
+import { setLocalNotification } from "./api/notification";
 import reducers from "./reducers";
 
 export default class App extends React.Component {
   state = {
     isLoadingComplete: false
   };
+
+  componentDidMount() {
+    setLocalNotification();
+  }
 
   render() {
     if (!this.state.isLoadingComplete && !this.props.skipLoadingScreen) {
