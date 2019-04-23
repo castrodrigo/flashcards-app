@@ -8,7 +8,6 @@ const Container = styled.ScrollView`
 
 export default class HomeScreen extends React.Component {
   render() {
-    console.log(this.props.cards);
     return (
       <Container>
         {this.props.decksMap.map(id => (

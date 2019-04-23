@@ -1,5 +1,9 @@
 import React from "react";
 import { connect } from "react-redux";
+import {
+  clearLocalNotification,
+  setLocalNotification
+} from "../api/notification";
 import QuizScreen from "./QuizScreen";
 import QuizScoreScreen from "./QuizScoreScreen";
 import Header from "../components/Header";
@@ -37,6 +41,9 @@ class QuizContainer extends React.Component {
   calculateScore = () => {
     const { total, wrong } = this.state;
     const each = Math.round(100 / total);
+
+    clearLocalNotification().then(setLocalNotification);
+
     return 100 - each * wrong.length;
   };
 
