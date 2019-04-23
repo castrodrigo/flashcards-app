@@ -1,0 +1,813 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render NewCardScreen should render successfully 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <NewCardScreen
+    deck={
+      Object {
+        "id": "321",
+        "name": "Deck Test",
+      }
+    }
+    navigation={
+      Object {
+        "navigate": [MockFunction],
+      }
+    }
+    onSubmit={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        <ForwardRef>
+          Creating a new card for "
+          Deck Test
+          "
+        </ForwardRef>,
+        <ForwardRef>
+          You can create as many Cards you want in this Deck. Each Card behaves as a single question in the Quiz.
+        </ForwardRef>,
+        <ForwardRef>
+          <ForwardRef
+            maxLength={60}
+            onBlur={[Function]}
+            onChangeText={[Function]}
+            placeholder="Question"
+          />
+          <ForwardRef
+            maxLength={60}
+            onBlur={[Function]}
+            onChangeText={[Function]}
+            placeholder="Answer"
+          />
+          <ForwardRef
+            onPress={[Function]}
+          >
+            <ForwardRef>
+              Create New Card
+            </ForwardRef>
+          </ForwardRef>
+        </ForwardRef>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            "Creating a new card for \\"",
+            "Deck Test",
+            "\\"",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Creating a new card for \\"",
+          "Deck Test",
+          "\\"",
+        ],
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "displayName": "Styled(Component)",
+          "inlineStyle": InlineStyle {
+            "rules": Array [
+              "
+  font-size: 24px;
+  font-weight: bold;
+  color: #1baff6;
+",
+            ],
+          },
+          "propTypes": Object {
+            "accessible": [Function],
+            "adjustsFontSizeToFit": [Function],
+            "allowFontScaling": [Function],
+            "disabled": [Function],
+            "ellipsizeMode": [Function],
+            "minimumFontScale": [Function],
+            "nativeID": [Function],
+            "numberOfLines": [Function],
+            "onLayout": [Function],
+            "onLongPress": [Function],
+            "onPress": [Function],
+            "pressRetentionOffset": [Function],
+            "selectable": [Function],
+            "selectionColor": [Function],
+            "style": [Function],
+            "suppressHighlighting": [Function],
+            "testID": [Function],
+            "textBreakStrategy": [Function],
+          },
+          "render": [Function],
+          "styledComponentId": "StyledNativeComponent",
+          "target": [Function],
+          "withComponent": [Function],
+          Symbol(Symbol.hasInstance): [Function],
+        },
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": "You can create as many Cards you want in this Deck. Each Card behaves as a single question in the Quiz.",
+        },
+        "ref": null,
+        "rendered": "You can create as many Cards you want in this Deck. Each Card behaves as a single question in the Quiz.",
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "displayName": "Styled(Component)",
+          "inlineStyle": InlineStyle {
+            "rules": Array [
+              "
+  font-size: 14px;
+  color: #3c3c3c;
+  margin: 10px 0;
+  padding: 10px 0;
+",
+            ],
+          },
+          "propTypes": Object {
+            "accessible": [Function],
+            "adjustsFontSizeToFit": [Function],
+            "allowFontScaling": [Function],
+            "disabled": [Function],
+            "ellipsizeMode": [Function],
+            "minimumFontScale": [Function],
+            "nativeID": [Function],
+            "numberOfLines": [Function],
+            "onLayout": [Function],
+            "onLongPress": [Function],
+            "onPress": [Function],
+            "pressRetentionOffset": [Function],
+            "selectable": [Function],
+            "selectionColor": [Function],
+            "style": [Function],
+            "suppressHighlighting": [Function],
+            "testID": [Function],
+            "textBreakStrategy": [Function],
+          },
+          "render": [Function],
+          "styledComponentId": "StyledNativeComponent",
+          "target": [Function],
+          "withComponent": [Function],
+          Symbol(Symbol.hasInstance): [Function],
+        },
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <ForwardRef
+              maxLength={60}
+              onBlur={[Function]}
+              onChangeText={[Function]}
+              placeholder="Question"
+            />,
+            <ForwardRef
+              maxLength={60}
+              onBlur={[Function]}
+              onChangeText={[Function]}
+              placeholder="Answer"
+            />,
+            false,
+            <ForwardRef
+              onPress={[Function]}
+            >
+              <ForwardRef>
+                Create New Card
+              </ForwardRef>
+            </ForwardRef>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "maxLength": 60,
+              "onBlur": [Function],
+              "onChangeText": [Function],
+              "placeholder": "Question",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "State": Object {
+                "blurTextInput": [Function],
+                "currentlyFocusedField": [Function],
+                "focusTextInput": [Function],
+              },
+              "attrs": Array [],
+              "displayName": "Styled(TextInput)",
+              "getDefaultProps": [Function],
+              "inlineStyle": InlineStyle {
+                "rules": Array [
+                  "
+  border-color: #cccccc;
+  border-bottom-width: 1;
+  height: 50;
+  font-size: 20;
+  padding-left: 2px;
+  padding-right: 2px;
+",
+                ],
+              },
+              "render": [Function],
+              "styledComponentId": "StyledNativeComponent",
+              "target": [Function],
+              "withComponent": [Function],
+              Symbol(Symbol.hasInstance): [Function],
+            },
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "maxLength": 60,
+              "onBlur": [Function],
+              "onChangeText": [Function],
+              "placeholder": "Answer",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "State": Object {
+                "blurTextInput": [Function],
+                "currentlyFocusedField": [Function],
+                "focusTextInput": [Function],
+              },
+              "attrs": Array [],
+              "displayName": "Styled(TextInput)",
+              "getDefaultProps": [Function],
+              "inlineStyle": InlineStyle {
+                "rules": Array [
+                  "
+  border-color: #cccccc;
+  border-bottom-width: 1;
+  height: 50;
+  font-size: 20;
+  padding-left: 2px;
+  padding-right: 2px;
+",
+                ],
+              },
+              "render": [Function],
+              "styledComponentId": "StyledNativeComponent",
+              "target": [Function],
+              "withComponent": [Function],
+              Symbol(Symbol.hasInstance): [Function],
+            },
+          },
+          false,
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": <ForwardRef>
+                Create New Card
+              </ForwardRef>,
+              "onPress": [Function],
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "Create New Card",
+              },
+              "ref": null,
+              "rendered": "Create New Card",
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "displayName": "Styled(Component)",
+                "inlineStyle": InlineStyle {
+                  "rules": Array [
+                    "
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 0 10px;
+  align-self: center;
+",
+                  ],
+                },
+                "propTypes": Object {
+                  "accessible": [Function],
+                  "adjustsFontSizeToFit": [Function],
+                  "allowFontScaling": [Function],
+                  "disabled": [Function],
+                  "ellipsizeMode": [Function],
+                  "minimumFontScale": [Function],
+                  "nativeID": [Function],
+                  "numberOfLines": [Function],
+                  "onLayout": [Function],
+                  "onLongPress": [Function],
+                  "onPress": [Function],
+                  "pressRetentionOffset": [Function],
+                  "selectable": [Function],
+                  "selectionColor": [Function],
+                  "style": [Function],
+                  "suppressHighlighting": [Function],
+                  "testID": [Function],
+                  "textBreakStrategy": [Function],
+                },
+                "render": [Function],
+                "styledComponentId": "StyledNativeComponent",
+                "target": [Function],
+                "withComponent": [Function],
+                Symbol(Symbol.hasInstance): [Function],
+              },
+            },
+            "type": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "displayName": "Styled(Styled(TouchableOpacity))",
+              "getDefaultProps": [Function],
+              "inlineStyle": InlineStyle {
+                "rules": Array [
+                  "
+  padding: 10px;
+  margin-top: 32px;
+  border-radius: 12px;
+  border-bottom-width: 3px;
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+",
+                  "
+  background: #a560e7;
+  border-bottom-color: #b881ec;
+",
+                ],
+              },
+              "render": [Function],
+              "styledComponentId": "StyledNativeComponent",
+              "target": [Function],
+              "withComponent": [Function],
+              Symbol(Symbol.hasInstance): [Function],
+            },
+          },
+        ],
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "displayName": "Styled(Component)",
+          "inlineStyle": InlineStyle {
+            "rules": Array [
+              "
+  margin-top: 10px;
+  padding: 20px;
+  border-width: 1px;
+  border-color: #ccc;
+  border-radius: 12px;
+",
+            ],
+          },
+          "render": [Function],
+          "styledComponentId": "StyledNativeComponent",
+          "target": [Function],
+          "withComponent": [Function],
+          Symbol(Symbol.hasInstance): [Function],
+        },
+      },
+    ],
+    "type": [MockFunction],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <ForwardRef>
+            Creating a new card for "
+            Deck Test
+            "
+          </ForwardRef>,
+          <ForwardRef>
+            You can create as many Cards you want in this Deck. Each Card behaves as a single question in the Quiz.
+          </ForwardRef>,
+          <ForwardRef>
+            <ForwardRef
+              maxLength={60}
+              onBlur={[Function]}
+              onChangeText={[Function]}
+              placeholder="Question"
+            />
+            <ForwardRef
+              maxLength={60}
+              onBlur={[Function]}
+              onChangeText={[Function]}
+              placeholder="Answer"
+            />
+            <ForwardRef
+              onPress={[Function]}
+            >
+              <ForwardRef>
+                Create New Card
+              </ForwardRef>
+            </ForwardRef>
+          </ForwardRef>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              "Creating a new card for \\"",
+              "Deck Test",
+              "\\"",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Creating a new card for \\"",
+            "Deck Test",
+            "\\"",
+          ],
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "displayName": "Styled(Component)",
+            "inlineStyle": InlineStyle {
+              "rules": Array [
+                "
+  font-size: 24px;
+  font-weight: bold;
+  color: #1baff6;
+",
+              ],
+            },
+            "propTypes": Object {
+              "accessible": [Function],
+              "adjustsFontSizeToFit": [Function],
+              "allowFontScaling": [Function],
+              "disabled": [Function],
+              "ellipsizeMode": [Function],
+              "minimumFontScale": [Function],
+              "nativeID": [Function],
+              "numberOfLines": [Function],
+              "onLayout": [Function],
+              "onLongPress": [Function],
+              "onPress": [Function],
+              "pressRetentionOffset": [Function],
+              "selectable": [Function],
+              "selectionColor": [Function],
+              "style": [Function],
+              "suppressHighlighting": [Function],
+              "testID": [Function],
+              "textBreakStrategy": [Function],
+            },
+            "render": [Function],
+            "styledComponentId": "StyledNativeComponent",
+            "target": [Function],
+            "withComponent": [Function],
+            Symbol(Symbol.hasInstance): [Function],
+          },
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": "You can create as many Cards you want in this Deck. Each Card behaves as a single question in the Quiz.",
+          },
+          "ref": null,
+          "rendered": "You can create as many Cards you want in this Deck. Each Card behaves as a single question in the Quiz.",
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "displayName": "Styled(Component)",
+            "inlineStyle": InlineStyle {
+              "rules": Array [
+                "
+  font-size: 14px;
+  color: #3c3c3c;
+  margin: 10px 0;
+  padding: 10px 0;
+",
+              ],
+            },
+            "propTypes": Object {
+              "accessible": [Function],
+              "adjustsFontSizeToFit": [Function],
+              "allowFontScaling": [Function],
+              "disabled": [Function],
+              "ellipsizeMode": [Function],
+              "minimumFontScale": [Function],
+              "nativeID": [Function],
+              "numberOfLines": [Function],
+              "onLayout": [Function],
+              "onLongPress": [Function],
+              "onPress": [Function],
+              "pressRetentionOffset": [Function],
+              "selectable": [Function],
+              "selectionColor": [Function],
+              "style": [Function],
+              "suppressHighlighting": [Function],
+              "testID": [Function],
+              "textBreakStrategy": [Function],
+            },
+            "render": [Function],
+            "styledComponentId": "StyledNativeComponent",
+            "target": [Function],
+            "withComponent": [Function],
+            Symbol(Symbol.hasInstance): [Function],
+          },
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <ForwardRef
+                maxLength={60}
+                onBlur={[Function]}
+                onChangeText={[Function]}
+                placeholder="Question"
+              />,
+              <ForwardRef
+                maxLength={60}
+                onBlur={[Function]}
+                onChangeText={[Function]}
+                placeholder="Answer"
+              />,
+              false,
+              <ForwardRef
+                onPress={[Function]}
+              >
+                <ForwardRef>
+                  Create New Card
+                </ForwardRef>
+              </ForwardRef>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "maxLength": 60,
+                "onBlur": [Function],
+                "onChangeText": [Function],
+                "placeholder": "Question",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "State": Object {
+                  "blurTextInput": [Function],
+                  "currentlyFocusedField": [Function],
+                  "focusTextInput": [Function],
+                },
+                "attrs": Array [],
+                "displayName": "Styled(TextInput)",
+                "getDefaultProps": [Function],
+                "inlineStyle": InlineStyle {
+                  "rules": Array [
+                    "
+  border-color: #cccccc;
+  border-bottom-width: 1;
+  height: 50;
+  font-size: 20;
+  padding-left: 2px;
+  padding-right: 2px;
+",
+                  ],
+                },
+                "render": [Function],
+                "styledComponentId": "StyledNativeComponent",
+                "target": [Function],
+                "withComponent": [Function],
+                Symbol(Symbol.hasInstance): [Function],
+              },
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "maxLength": 60,
+                "onBlur": [Function],
+                "onChangeText": [Function],
+                "placeholder": "Answer",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "State": Object {
+                  "blurTextInput": [Function],
+                  "currentlyFocusedField": [Function],
+                  "focusTextInput": [Function],
+                },
+                "attrs": Array [],
+                "displayName": "Styled(TextInput)",
+                "getDefaultProps": [Function],
+                "inlineStyle": InlineStyle {
+                  "rules": Array [
+                    "
+  border-color: #cccccc;
+  border-bottom-width: 1;
+  height: 50;
+  font-size: 20;
+  padding-left: 2px;
+  padding-right: 2px;
+",
+                  ],
+                },
+                "render": [Function],
+                "styledComponentId": "StyledNativeComponent",
+                "target": [Function],
+                "withComponent": [Function],
+                Symbol(Symbol.hasInstance): [Function],
+              },
+            },
+            false,
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": <ForwardRef>
+                  Create New Card
+                </ForwardRef>,
+                "onPress": [Function],
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": "Create New Card",
+                },
+                "ref": null,
+                "rendered": "Create New Card",
+                "type": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "displayName": "Styled(Component)",
+                  "inlineStyle": InlineStyle {
+                    "rules": Array [
+                      "
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 0 10px;
+  align-self: center;
+",
+                    ],
+                  },
+                  "propTypes": Object {
+                    "accessible": [Function],
+                    "adjustsFontSizeToFit": [Function],
+                    "allowFontScaling": [Function],
+                    "disabled": [Function],
+                    "ellipsizeMode": [Function],
+                    "minimumFontScale": [Function],
+                    "nativeID": [Function],
+                    "numberOfLines": [Function],
+                    "onLayout": [Function],
+                    "onLongPress": [Function],
+                    "onPress": [Function],
+                    "pressRetentionOffset": [Function],
+                    "selectable": [Function],
+                    "selectionColor": [Function],
+                    "style": [Function],
+                    "suppressHighlighting": [Function],
+                    "testID": [Function],
+                    "textBreakStrategy": [Function],
+                  },
+                  "render": [Function],
+                  "styledComponentId": "StyledNativeComponent",
+                  "target": [Function],
+                  "withComponent": [Function],
+                  Symbol(Symbol.hasInstance): [Function],
+                },
+              },
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "displayName": "Styled(Styled(TouchableOpacity))",
+                "getDefaultProps": [Function],
+                "inlineStyle": InlineStyle {
+                  "rules": Array [
+                    "
+  padding: 10px;
+  margin-top: 32px;
+  border-radius: 12px;
+  border-bottom-width: 3px;
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+",
+                    "
+  background: #a560e7;
+  border-bottom-color: #b881ec;
+",
+                  ],
+                },
+                "render": [Function],
+                "styledComponentId": "StyledNativeComponent",
+                "target": [Function],
+                "withComponent": [Function],
+                Symbol(Symbol.hasInstance): [Function],
+              },
+            },
+          ],
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "displayName": "Styled(Component)",
+            "inlineStyle": InlineStyle {
+              "rules": Array [
+                "
+  margin-top: 10px;
+  padding: 20px;
+  border-width: 1px;
+  border-color: #ccc;
+  border-radius: 12px;
+",
+              ],
+            },
+            "render": [Function],
+            "styledComponentId": "StyledNativeComponent",
+            "target": [Function],
+            "withComponent": [Function],
+            Symbol(Symbol.hasInstance): [Function],
+          },
+        },
+      ],
+      "type": [MockFunction],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": false,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;

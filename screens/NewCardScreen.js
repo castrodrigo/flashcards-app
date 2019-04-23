@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { Keyboard } from "react-native";
 import styled from "styled-components/native";
 import Header from "../components/Header";
@@ -71,3 +72,10 @@ export default class NewCardScreen extends React.Component {
     );
   }
 }
+
+NewCardScreen.propTypes = {
+  onSubmit: PropTypes.func.isRequired,
+  deck: PropTypes.shape({
+    name: PropTypes.string.isRequired
+  }).isRequired
+};
