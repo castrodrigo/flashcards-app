@@ -21,15 +21,20 @@ export default class NewDeckScreen extends React.Component {
     header: <Header>New Deck</Header>
   };
 
-  state = {
+  initialState = {
     name: "",
     description: "",
     error: false
   };
 
+  state = {
+    ...this.initialState
+  };
+
   handleSubmit = () => {
     const { name, description } = this.state;
     if (name !== "") {
+      this.setState({ ...this.initialState });
       return this.props.onSubmit({ name, description });
     }
     return this.setState({ error: true });
@@ -53,12 +58,14 @@ export default class NewDeckScreen extends React.Component {
             maxLength={30}
             onBlur={Keyboard.dismiss}
             onChangeText={e => this.handleChange(e, "name")}
+            value={this.state.name}
           />
           <Input
             placeholder="Description"
             maxLength={60}
             onBlur={Keyboard.dismiss}
             onChangeText={e => this.handleChange(e, "description")}
+            value={this.state.description}
           />
           {this.state.error && (
             <ErrorMessage>
