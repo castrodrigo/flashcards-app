@@ -408,7 +408,7 @@ ShallowWrapper {
             "rules": Array [
               "
   flex-direction: row;
-  padding: 60px 10px;
+  padding: 30px 10px;
   justify-content: center;
 ",
             ],
@@ -1126,7 +1126,7 @@ ShallowWrapper {
               "rules": Array [
                 "
   flex-direction: row;
-  padding: 60px 10px;
+  padding: 30px 10px;
   justify-content: center;
 ",
               ],
