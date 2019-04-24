@@ -7,7 +7,8 @@ const mapDispatchToProps = dispatch => ({
 });
 
 const mapProps = (state, { submitDeck }, { navigation }) => ({
-  onSubmit: deck => submitDeck(deck).then(() => navigation.navigate("Home"))
+  onSubmit: deck =>
+    submitDeck(deck).then(({ id }) => navigation.navigate("Deck", { id }))
 });
 
 export default connect(
