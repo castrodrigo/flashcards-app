@@ -71,7 +71,15 @@ npm install
 - 2.1.b After installing the packages, to run the app:
 
 ```bash
-expo init
+yarn start
+```
+
+```bash
+npm start
+```
+
+```bash
+expo start
 ```
 
 - 2.1.c The application server run will start spinning and it will prompt many options. You can select your preferred emulator, as `Android` or `iOS`, run in your own device, using [Expo App](https://play.google.com/store/apps/details?id=host.exp.exponent&hl=en) and see a nice terminal browser by typing `d` in the terminal that runs `Expo`
