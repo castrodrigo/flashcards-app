@@ -15,7 +15,7 @@ const TotalCards = styled.Text`
 
 const CardContainer = styled.View`
   flex-direction: row;
-  padding: 60px 10px;
+  padding: 30px 10px;
   justify-content: center;
 `;
 
