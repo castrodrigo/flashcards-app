@@ -27,5 +27,6 @@ export const handleAddDeck = data => dispatch => {
       deck,
       key: id
     })
-    .then(() => dispatch(addDeck(deck)));
+    .then(() => dispatch(addDeck(deck)))
+    .then(({ deck }) => deck);
 };
